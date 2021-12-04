@@ -6,10 +6,10 @@ const List = styled.li`
   font-size: 1.25rem;
 `;
 
-const NavTitle = ({ title }) => {
+const NavTitle = ({ title, target }) => {
   return (
     <List>
-      <a href="#d">{title}</a>
+      <a href={`#${target}`}>{title}</a>
     </List>
   );
 };

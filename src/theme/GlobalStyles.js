@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth; 
+  }
+
   a {
     text-decoration: none;
     color: #EEEEEE;

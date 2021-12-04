@@ -9,12 +9,19 @@ const Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 1em 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(57, 62, 70, 0.7);
 `;
 
 const Header = () => {
   return (
     <Wrapper>
-      <div>Logo</div>
+      <a href="#hero">
+        <div>Logo</div>
+      </a>
       <Nav />
     </Wrapper>
   );

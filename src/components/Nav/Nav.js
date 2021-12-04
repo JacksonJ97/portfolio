@@ -14,9 +14,9 @@ const Nav = () => {
   return (
     <Wrapper>
       <ul>
-        <NavTitle title="about" />
-        <NavTitle title="projects" />
-        <NavTitle title="contacts" />
+        <NavTitle title="projects" target="projects" />
+        <NavTitle title="about" target="d" />
+        <NavTitle title="contacts" target="e" />
       </ul>
     </Wrapper>
   );
