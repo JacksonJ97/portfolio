@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // Components
 import Button from "./Utilities/Button";
@@ -21,6 +22,20 @@ const Wrapper = styled.div`
   .btns-container {
     margin: 2em 0;
   }
+
+  .links-container {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+
+    a {
+      margin: 0 0.25em;
+    }
+
+    a:hover {
+      color: #ffd369;
+    }
+  }
 `;
 
 const Hero = ({ id }) => {
@@ -31,6 +46,16 @@ const Hero = ({ id }) => {
       <div className="btns-container">
         <Button text="View Resume" />
         <Button text="View Projects" target="projects" />
+      </div>
+
+      <div className="links-container">
+        <a href="https://github.com/JacksonJ97" target="_blank" rel="noreferrer">
+          <FaGithub />
+        </a>
+
+        <a href="https://www.linkedin.com/in/jacksonjude/" target="_blank" rel="noreferrer">
+          <FaLinkedin />
+        </a>
       </div>
     </Wrapper>
   );

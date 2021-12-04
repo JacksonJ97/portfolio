@@ -9,7 +9,6 @@ const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 100vh);
-  /* place-items: center; */
 `;
 
 const Main = () => {
