@@ -11,7 +11,7 @@ const Wrapper = styled.button`
   cursor: pointer;
 
   :hover {
-    background-color: #fff;
+    background-color: #eeeeee;
   }
 `;
 

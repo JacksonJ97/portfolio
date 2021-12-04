@@ -4,6 +4,10 @@ import styled from "styled-components";
 const List = styled.li`
   margin: 0 1em;
   font-size: 1.25rem;
+
+  a:hover {
+    color: #ffd369;
+  }
 `;
 
 const NavTitle = ({ title, target }) => {
