@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 // Components
+import SectionHeader from "./Utilities/SectionHeader";
 import ProjectCardGrid from "./ProjectCardGrid";
 
 // Styles
@@ -9,16 +10,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  h2 {
-    margin: 3em 0;
-  }
 `;
 
 const Projects = ({ id }) => {
   return (
     <Wrapper id={id}>
-      <h2>Projects</h2>
+      <SectionHeader text="Projects" />
       <ProjectCardGrid />
     </Wrapper>
   );

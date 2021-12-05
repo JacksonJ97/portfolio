@@ -41,8 +41,8 @@ const Wrapper = styled.div`
 const Hero = ({ id }) => {
   return (
     <Wrapper id={id}>
-      <h1>hi, i'm jackson, a passionate frontend developer</h1>
-      <p>an electrical engineering graduate looking to pursue a career in frontend development</p>
+      <h1>Hello! I'm Jackson Jude.</h1>
+      <p>I'm an electrical engineering graduate looking to pursue a career in frontend development.</p>
       <div className="btns-container">
         <Button text="View Resume" />
         <Button text="View Projects" target="projects" />
