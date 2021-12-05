@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Styles
 const Header = styled.h2`
-  margin: 3em 0;
+  margin: 3em 0 2em 0;
 `;
 
 const SectionHeader = ({ text }) => {
