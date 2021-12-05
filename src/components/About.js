@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     font-size: 1.25rem;
     background-color: #393e46;
     border-radius: 6px;
-    padding: 2em;
+    padding: 3em;
     width: 80%;
   }
 `;
