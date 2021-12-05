@@ -6,6 +6,7 @@ const Wrapper = styled.button`
   margin: 0 0.75em;
   padding: 0.75em;
   background-color: #ffd369;
+  color: #222831;
   border: none;
   border-radius: 6px;
   cursor: pointer;
