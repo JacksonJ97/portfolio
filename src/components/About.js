@@ -15,6 +15,16 @@ const Wrapper = styled.div`
     border-radius: 6px;
     padding: 3em;
     width: 80%;
+    max-width: 1200px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 635px) {
+    p {
+      font-size: 1rem;
+      padding: 1.5em;
+      width: 90%;
+    }
   }
 `;
 
@@ -23,10 +33,10 @@ const About = ({ id }) => {
     <Wrapper id={id}>
       <SectionHeader text="About Me" />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum.
+        I'm an Electrical Engineering graduate making a career switch into software development. With a focus in frontend development, I'm
+        passionate about producing elegant and polished user interfaces efficiently and effectively. When I'm not working on web
+        applications, I can be found playing competitive games or engaging in new hobbies with friends. I enjoy solving problems through
+        code, and I'm excited to work alongside other amazing programmers!
       </p>
     </Wrapper>
   );
