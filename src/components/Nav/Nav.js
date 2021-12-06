@@ -14,10 +14,10 @@ const Nav = () => {
   return (
     <Wrapper>
       <ul>
-        <NavTitle title="projects" target="projects" />
-        <NavTitle title="skills" target="skills" />
-        <NavTitle title="about" target="about" />
-        <NavTitle title="contact" target="contact" />
+        <NavTitle title="Projects" target="projects" />
+        <NavTitle title="Skills" target="skills" />
+        <NavTitle title="About" target="about" />
+        <NavTitle title="Contact" target="contact" />
       </ul>
     </Wrapper>
   );

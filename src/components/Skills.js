@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 
     p {
       font-size: 0.875rem;
-      margin: 0.5em 0;
+      margin-top: 0.5em;
     }
   }
 
@@ -56,6 +56,7 @@ const Skills = ({ id }) => {
   return (
     <Wrapper id={id}>
       <SectionHeader text="Skills" />
+
       <div className="skills-container">
         <div className="skill">
           <div className="icon">
