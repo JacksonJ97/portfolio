@@ -12,16 +12,21 @@ const Wrapper = styled.div`
 
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 1em;
     background-color: #393e46;
-    padding: 4em;
+    padding: 3em;
     border-radius: 6px;
+    width: 50%;
   }
 
   .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     p {
       font-size: 0.875rem;
-      text-align: center;
       margin: 0.5em 0;
     }
   }
@@ -33,12 +38,17 @@ const Wrapper = styled.div`
     color: #393e46;
     border-radius: 6px;
     padding: 0.5em;
-    margin: 0 1em;
     width: 64px;
   }
 
   svg {
     font-size: 3rem;
+  }
+
+  @media (max-width: 350px) {
+    .skills-container {
+      padding: 3em 1em;
+    }
   }
 `;
 
