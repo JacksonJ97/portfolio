@@ -11,7 +11,7 @@ import Contact from "./Contact";
 const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh repeat(3, 80vh);
+  grid-template-rows: 100vh 77vh 88vh 80vh;
 `;
 
 const Main = () => {
