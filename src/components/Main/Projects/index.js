@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Components
-import SectionHeader from "./Utilities/SectionHeader";
+import SectionHeader from "../../Utilities/SectionHeader";
 import ProjectCardGrid from "./ProjectCardGrid";
 
 // Styles

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Components
-import Nav from "./Nav/Nav";
+import Nav from "./Nav";
 
 // Styles
 const Wrapper = styled.header`

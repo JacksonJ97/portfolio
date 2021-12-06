@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // Components
-import Button from "./Utilities/Button";
+import Button from "../../Utilities/Button";
 
 // Styles
 const Wrapper = styled.div`

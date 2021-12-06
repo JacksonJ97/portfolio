@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 // Components
-import Card from "../Utilities/Card";
+import Card from "../../../Utilities/Card";
 
 // Project Data
-import data from "../../data";
+import data from "../../../../data";
 
 // Styles
 const Wrapper = styled.div`

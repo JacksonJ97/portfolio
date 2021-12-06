@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaSass, FaReact, FaGit, FaPython } from "react-icons/fa";
 
 // Components
-import SectionHeader from "./Utilities/SectionHeader";
+import SectionHeader from "../../Utilities/SectionHeader";
 
 // Styles
 const Wrapper = styled.div`

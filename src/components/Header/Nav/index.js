@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Components
-import NavTitle from "../Utilities/NavTitle";
+import NavTitle from "../../Utilities/NavTitle";
 
 // Styles
 const Wrapper = styled.nav`
