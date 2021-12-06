@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Components
-import NavTitle from "../../Utilities/NavTitle";
+import NavTitle from "./NavTitle";
 
 // Styles
 const Wrapper = styled.nav`
@@ -17,7 +17,6 @@ const Nav = () => {
         <NavTitle title="Projects" target="projects" />
         <NavTitle title="Skills" target="skills" />
         <NavTitle title="About" target="about" />
-        <NavTitle title="Contact" target="contact" />
       </ul>
     </Wrapper>
   );

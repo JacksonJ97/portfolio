@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 // Components
 import Button from "../../Utilities/Button";
@@ -56,6 +56,10 @@ const Hero = ({ id }) => {
 
         <a href="https://www.linkedin.com/in/jacksonjude/" target="_blank" rel="noreferrer">
           <FaLinkedin />
+        </a>
+
+        <a href="mailto:jacksonjude97@gmail.com">
+          <FaEnvelope />
         </a>
       </div>
     </Wrapper>
