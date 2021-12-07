@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import resume from "../../../assets/resume/resume.pdf";
 
 // Components
 import Button from "../../Utilities/Button";
@@ -75,8 +76,12 @@ const Hero = ({ id }) => {
         I'm a <span className="highlight">Frontend Developer</span> who loves creating beautiful and interactive web applications.
       </p>
       <div className="btns-container">
-        <Button text="View Resume" />
-        <Button text="View Projects" target="projects" />
+        <a href={resume} target="_blank" rel="noreferrer">
+          <Button text="View Resume" />
+        </a>
+        <a href="#projects">
+          <Button text="View Projects" />
+        </a>
       </div>
 
       <div className="links-container">

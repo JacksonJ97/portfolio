@@ -16,7 +16,7 @@ const Wrapper = styled.button`
   }
 `;
 
-const Button = ({ text, target }) => {
+const Button = ({ text }) => {
   return <Wrapper>{text}</Wrapper>;
 };
 

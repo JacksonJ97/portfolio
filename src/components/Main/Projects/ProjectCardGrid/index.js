@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const ProjectCardGrid = () => {
   return (
     <Wrapper>
-      {data.map((element) => (
+      {data.map((element, index) => (
         <Card
           title={element.title}
           img={element.img}
@@ -30,6 +30,7 @@ const ProjectCardGrid = () => {
           technologies={element.technologies}
           liveLink={element.liveLink}
           repoLink={element.repoLink}
+          key={index}
         />
       ))}
     </Wrapper>

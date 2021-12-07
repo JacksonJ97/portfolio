@@ -65,8 +65,8 @@ const Card = ({ title, img, description, technologies, liveLink, repoLink }) => 
         <h4>{title}</h4>
         <p>{description}</p>
         <ul>
-          {technologies.map((tech) => (
-            <TechBox text={tech} />
+          {technologies.map((tech, index) => (
+            <TechBox text={tech} key={index} />
           ))}
         </ul>
         <div className="links">

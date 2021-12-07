@@ -10,7 +10,6 @@ import About from "./About";
 const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 100vh 77vh 88vh; */
   grid-template-rows: 100vh 1fr 1fr;
 `;
 
