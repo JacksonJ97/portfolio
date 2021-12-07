@@ -19,10 +19,10 @@ const Main = () => {
     <Wrapper>
       <Hero id="hero" />
       <Projects id="projects" />
-      {/* <div>
+      <div>
         <Skills id="skills" />
         <About id="about" />
-      </div> */}
+      </div>
     </Wrapper>
   );
 };

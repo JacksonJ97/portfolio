@@ -6,7 +6,6 @@ import TechBox from "./TechBox";
 // Styles
 const Wrapper = styled.div`
   display: flex;
-  /* justify-content: space-evenly; */
   gap: 32px;
   background-color: #393e46;
   padding: 2em;

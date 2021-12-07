@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styles
 const List = styled.li`
   margin: 0 1em;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 
   a:hover {
     color: #ffd369;

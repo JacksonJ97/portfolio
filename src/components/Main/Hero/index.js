@@ -13,11 +13,19 @@ const Wrapper = styled.div`
 
   h1 {
     font-size: 3rem;
-    margin: 0.5em 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+    width: 90%;
+  }
+
+  .highlight {
+    color: #ffd369;
   }
 
   p {
+    text-align: center;
     font-size: 1.5rem;
+    width: 90%;
   }
 
   .btns-container {
@@ -37,13 +45,35 @@ const Wrapper = styled.div`
       color: #ffd369;
     }
   }
+
+  @media (max-width: 370px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    .btns-container {
+      display: flex;
+      flex-direction: column;
+      margin: 1.5em 0;
+
+      button {
+        margin: 0.75em 0;
+      }
+    }
+  }
 `;
 
 const Hero = ({ id }) => {
   return (
     <Wrapper id={id}>
       <h1>Hello! I'm Jackson Jude.</h1>
-      <p>I'm an electrical engineering graduate looking to pursue a career in frontend development.</p>
+      <p>
+        I'm a <span className="highlight">Frontend Developer</span> who loves creating beautiful and interactive web applications.
+      </p>
       <div className="btns-container">
         <Button text="View Resume" />
         <Button text="View Projects" target="projects" />
