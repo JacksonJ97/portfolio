@@ -6,8 +6,8 @@ import TechBox from "./TechBox";
 // Styles
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  gap: 12px;
+  /* justify-content: space-evenly; */
+  gap: 32px;
   background-color: #393e46;
   padding: 2em;
   border-radius: 6px;
@@ -17,15 +17,17 @@ const Wrapper = styled.div`
   img {
     width: 30%;
     min-width: 160px;
+    align-self: center;
   }
 
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   p {
     margin: 1em 0 12.5px 0;
     word-break: break-word;
+    max-width: 450px;
   }
 
   ul {
@@ -46,6 +48,12 @@ const Wrapper = styled.div`
 
   a:hover {
     background-color: #eeeeee;
+  }
+
+  @media (max-width: 520px) {
+    img {
+      display: none;
+    }
   }
 `;
 

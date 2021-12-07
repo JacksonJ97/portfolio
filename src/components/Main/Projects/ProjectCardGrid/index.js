@@ -9,10 +9,14 @@ import data from "../../../../data";
 // Styles
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 24px;
-  width: 80%;
+  width: 90%;
   place-items: center;
+
+  @media (max-width: 520px) {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
 `;
 
 const ProjectCardGrid = () => {
