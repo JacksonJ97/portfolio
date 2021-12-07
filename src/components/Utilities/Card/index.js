@@ -6,35 +6,41 @@ import TechBox from "./TechBox";
 // Styles
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 12px;
   background-color: #393e46;
   padding: 2em;
   border-radius: 6px;
   width: 100%;
+  height: 100%;
 
   img {
-    width: 50%;
-    border-radius: 6px;
+    width: 30%;
+    min-width: 160px;
   }
 
   h4 {
-    margin: 0 0.5em 0.75em 0.5em;
+    font-size: 1.25rem;
   }
 
   p {
-    margin: 0.75em 0.5em;
+    margin: 1em 0 12.5px 0;
+    word-break: break-word;
+  }
+
+  ul {
+    margin-bottom: 1em;
   }
 
   .links {
-    margin: 1em 0;
-    text-align: center;
+    padding: 0.75em 0;
   }
 
   a {
     background-color: #ffd369;
     color: #222831;
     padding: 0.75em;
-    margin: 0.5em;
+    margin-right: 0.5em;
     border-radius: 6px;
   }
 

@@ -4,9 +4,11 @@ import styled from "styled-components";
 const Wrapper = styled.li`
   display: inline-block;
   border: 1px solid #222831;
+  background-color: #eeeeee;
+  color: #222831;
   font-size: 0.875rem;
   padding: 0.5em;
-  margin: 0.25em;
+  margin: 0.25em 0.5em 0.25em 0;
   border-radius: 6px;
 `;
 

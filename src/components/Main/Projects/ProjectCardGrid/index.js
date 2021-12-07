@@ -9,46 +9,25 @@ import data from "../../../../data";
 // Styles
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 580px 580px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 24px;
+  width: 80%;
   place-items: center;
 `;
 
 const ProjectCardGrid = () => {
   return (
     <Wrapper>
-      <Card
-        title={data.title}
-        img={data.img}
-        description={data.description}
-        technologies={data.technologies}
-        liveLink={data.liveLink}
-        repoLink={data.repoLink}
-      />
-      <Card
-        title={data.title}
-        img={data.img}
-        description={data.description}
-        technologies={data.technologies}
-        liveLink={data.liveLink}
-        repoLink={data.repoLink}
-      />
-      <Card
-        title={data.title}
-        img={data.img}
-        description={data.description}
-        technologies={data.technologies}
-        liveLink={data.liveLink}
-        repoLink={data.repoLink}
-      />
-      <Card
-        title={data.title}
-        img={data.img}
-        description={data.description}
-        technologies={data.technologies}
-        liveLink={data.liveLink}
-        repoLink={data.repoLink}
-      />
+      {data.map((element) => (
+        <Card
+          title={element.title}
+          img={element.img}
+          description={element.description}
+          technologies={element.technologies}
+          liveLink={element.liveLink}
+          repoLink={element.repoLink}
+        />
+      ))}
     </Wrapper>
   );
 };
