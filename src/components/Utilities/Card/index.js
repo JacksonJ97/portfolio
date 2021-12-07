@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 // Components
 import TechBox from "./TechBox";
+import Button from "../Button";
 
 // Styles
 const Wrapper = styled.div`
@@ -33,20 +34,9 @@ const Wrapper = styled.div`
     margin-bottom: 1em;
   }
 
-  .links {
-    padding: 0.75em 0;
-  }
-
-  a {
-    background-color: #ffd369;
-    color: #222831;
-    padding: 0.75em;
-    margin-right: 0.5em;
-    border-radius: 6px;
-  }
-
-  a:hover {
-    background-color: #eeeeee;
+  button {
+    margin: 0 0.5em 0 0;
+    font-size: 1rem;
   }
 
   @media (max-width: 520px) {
@@ -71,10 +61,10 @@ const Card = ({ title, img, description, technologies, liveLink, repoLink }) => 
         </ul>
         <div className="links">
           <a href={liveLink} target="_blank" rel="noreferrer">
-            Live
+            <Button text="Live" />
           </a>
           <a href={repoLink} target="_blank" rel="noreferrer">
-            Repo
+            <Button text="Repo" />
           </a>
         </div>
       </div>
