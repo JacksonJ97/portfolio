@@ -54,7 +54,7 @@ const projectData = [
   {
     title: "Library Application",
     description:
-      "A library application that takes a information of books and displays it as cards. Users can add or remove the cards and they can also toggle whether if the book was read or unread.",
+      "A library application that takes information of books and displays it as cards. Users can add or remove the cards and they can also toggle whether the book was read or unread.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://jacksonj97-library-app.vercel.app/",
     repoLink: "https://github.com/JacksonJ97/library-app",
