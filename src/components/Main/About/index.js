@@ -44,7 +44,7 @@ const About = ({ id }) => {
           I'm an Electrical Engineering graduate making a career switch into software development. With a focus in frontend development, I'm
           passionate about producing elegant and polished user interfaces efficiently and effectively. When I'm not working on web
           applications, I can be found playing competitive games or engaging in new hobbies with friends. I enjoy solving problems through
-          code, and I'm excited to work alongside other amazing programmers!
+          code, and I'm looking forward to connecting and collaborating to make your web ideas a reality.
         </p>
       </div>
     </Wrapper>
