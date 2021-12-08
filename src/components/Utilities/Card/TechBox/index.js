@@ -7,7 +7,7 @@ const Wrapper = styled.li`
   color: #eeeeee;
   font-size: 0.875rem;
   padding: 0.5em;
-  margin: 0.25em 0.5em 0.25em 0;
+  margin: 0.25em 0.5em 0.25em -1px;
   border-radius: 6px;
 `;
 
