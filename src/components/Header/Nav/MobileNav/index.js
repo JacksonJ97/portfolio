@@ -8,11 +8,12 @@ import NavTitle from "../../../Utilities/NavTitle";
 
 // Styles
 const Wrapper = styled.div`
+  display: flex;
   position: relative;
 
   .menu {
     position: absolute;
-    top: 50px;
+    top: 48px;
     right: -20%;
     width: 100vw;
     background-color: rgba(57, 62, 70, 0.7);
