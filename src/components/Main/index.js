@@ -10,7 +10,7 @@ import About from "./About";
 const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh 1fr 1fr;
+  grid-template-rows: 100vh 1fr repeat(2, minmax(min-content, max-content));
 `;
 
 const Main = () => {
@@ -18,10 +18,8 @@ const Main = () => {
     <Wrapper>
       <Hero id="hero" />
       <Projects id="projects" />
-      <div>
-        <Skills id="skills" />
-        <About id="about" />
-      </div>
+      <Skills id="skills" />
+      <About id="about" />
     </Wrapper>
   );
 };
