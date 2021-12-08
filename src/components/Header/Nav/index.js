@@ -1,23 +1,17 @@
 import styled from "styled-components";
 
 // Components
-import NavTitle from "./NavTitle";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 // Styles
-const Wrapper = styled.nav`
-  ul {
-    display: flex;
-  }
-`;
+const Wrapper = styled.nav``;
 
 const Nav = () => {
   return (
     <Wrapper>
-      <ul>
-        <NavTitle title="Projects" target="projects" />
-        <NavTitle title="Skills" target="skills" />
-        <NavTitle title="About" target="about" />
-      </ul>
+      <DesktopNav />
+      <MobileNav />
     </Wrapper>
   );
 };
