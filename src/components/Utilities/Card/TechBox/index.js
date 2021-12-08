@@ -10,6 +10,7 @@ const Wrapper = styled.li`
   padding: 0.5em;
   margin: 0.25em 0.5em 0.25em 0;
   border-radius: 6px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const TechBox = ({ text }) => {

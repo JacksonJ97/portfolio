@@ -17,8 +17,8 @@ const Wrapper = styled.header`
   background-color: rgba(57, 62, 70, 0.7);
 
   img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     color: #222831;
     background-color: #eeeeee;

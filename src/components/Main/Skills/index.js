@@ -18,6 +18,7 @@ const Wrapper = styled.div`
     padding: 3em;
     border-radius: 6px;
     width: 50%;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
   }
 
   .skill {
@@ -39,6 +40,7 @@ const Wrapper = styled.div`
     border-radius: 6px;
     padding: 0.5em;
     width: 64px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
   }
 
   svg {

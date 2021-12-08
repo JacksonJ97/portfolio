@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     padding: 3em;
     width: 80%;
     max-width: 1200px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
   }
 
   p {
