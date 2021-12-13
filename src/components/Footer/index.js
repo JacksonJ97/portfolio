@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const Wrapper = styled.div`
   background-color: #393e46;
   padding: 2em;
-  margin-top: 7em;
+  margin-top: 8em;
   text-align: center;
 
   .links-container {
@@ -48,7 +48,7 @@ const Footer = () => {
           <FaEnvelope />
         </a>
       </div>
-      <p>Created by Jackson Jude</p>
+      <p>Built and designed by Jackson Jude</p>
       <p className="last-updated">Last Updated: December 12, 2021</p>
     </Wrapper>
   );

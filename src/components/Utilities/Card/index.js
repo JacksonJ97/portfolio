@@ -37,7 +37,8 @@ const Wrapper = styled.div`
 
   button {
     margin: 0 0.5em 0 0;
-    font-size: 1rem;
+    font-size: 1.125rem;
+    padding: 0.5em;
   }
 
   @media (max-width: 520px) {
@@ -60,7 +61,7 @@ const Card = ({ title, img, description, technologies, liveLink, repoLink }) => 
             <TechBox text={tech} key={index} />
           ))}
         </ul>
-        <div className="links">
+        <div>
           <a href={liveLink} target="_blank" rel="noreferrer">
             <Button text="Live" />
           </a>

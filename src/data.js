@@ -18,7 +18,7 @@ const projectData = [
   {
     title: "Portfolio",
     description:
-      "A portfolio website to share some details about myself, showcase my projects, and to give access to my contact information.",
+      "A portfolio website to share some details about myself, showcase my projects, and to give a resource for people to connect with me!",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     liveLink: "https://jacksonj97.github.io/portfolio/",
     repoLink: "https://github.com/JacksonJ97/portfolio",
