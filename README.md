@@ -12,4 +12,4 @@ A personal portfolio website to showcase my projects, share some details about m
 
 ### Live URL
 
-https://jacksonj97.github.io/portfolio/
+https://jacksonj97.github.io/
