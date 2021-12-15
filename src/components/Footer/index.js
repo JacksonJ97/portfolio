@@ -49,7 +49,7 @@ const Footer = () => {
         </a>
       </div>
       <p>Built and designed by Jackson Jude</p>
-      <p className="last-updated">Last Updated: December 12, 2021</p>
+      <p className="last-updated">Last Updated: December 14, 2021</p>
     </Wrapper>
   );
 };
