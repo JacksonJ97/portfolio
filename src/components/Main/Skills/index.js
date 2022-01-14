@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaSass, FaReact, FaGit, FaPython } from "react-icons/fa";
+import { SiJest } from "react-icons/si";
 
 // Components
 import SectionHeader from "../../Utilities/SectionHeader";
@@ -107,6 +108,13 @@ const Skills = ({ id }) => {
             <FaPython />
           </div>
           <p>Python</p>
+        </div>
+
+        <div className="skill">
+          <div className="icon">
+            <SiJest />
+          </div>
+          <p>Jest</p>
         </div>
       </div>
     </Wrapper>
