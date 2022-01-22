@@ -1,15 +1,24 @@
+import spaceImg from "./assets/images/space-icon.svg";
 import clothingImg from "./assets/images/clothing-icon.svg";
 import cvImg from "./assets/images/cv-app-icon.svg";
-import portfolioImg from "./assets/images/portfolio-icon.svg";
 import pokemonImg from "./assets/images/pokemon-icon.svg";
 import weatherImg from "./assets/images/weather-icon.svg";
-import teaImg from "./assets/images/tea-icon.svg";
+import portfolioImg from "./assets/images/portfolio-icon.svg";
 
 const projectData = [
   {
+    title: "Spacestagram",
+    description:
+      "An image sharing application that displays NASA's Astronomy Picture of the Day in the style of an instagram feed. Users can like and share the pictures.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    liveLink: "https://jacksonj97.github.io/spacestagram/",
+    repoLink: "https://github.com/JacksonJ97/spacestagram",
+    img: spaceImg,
+  },
+  {
     title: "Clothing Store",
     description:
-      "A clothing store website that allows users to browse through products and add them to a shopping cart. In the shopping cart, users can increase/decrease the quantity, remove the item, and checkout.",
+      "A clothing store website that allows users to browse through products and add them to a shopping cart. In the shopping cart, users can increase/decrease the quantity, remove the item, and/or checkout.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     liveLink: "https://jacksonj97.github.io/clothing-store/",
     repoLink: "https://github.com/JacksonJ97/clothing-store",
@@ -23,6 +32,15 @@ const projectData = [
     liveLink: "https://jacksonj97.github.io/cv-application/",
     repoLink: "https://github.com/JacksonJ97/cv-application",
     img: cvImg,
+  },
+  {
+    title: "Pokemon Memory Game",
+    description:
+      "A memory game where a user's score is increased depending on the number of unique pokemons clicked. If users click on the same pokemon their score is reset.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    liveLink: "https://jacksonj97.github.io/memory-card/",
+    repoLink: "https://github.com/JacksonJ97/memory-card",
+    img: pokemonImg,
   },
   {
     title: "Weather Application",
@@ -41,24 +59,6 @@ const projectData = [
     liveLink: "https://jacksonj97.github.io",
     repoLink: "https://github.com/JacksonJ97/jacksonj97.github.io",
     img: portfolioImg,
-  },
-  {
-    title: "Jack's Cafe",
-    description:
-      "A restaurant website suitable for a small business that contains a tabbing system to switch between the contents of the home, menu, and contact sections.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://jacksonj97.github.io/restaurant-page/",
-    repoLink: "https://github.com/JacksonJ97/restaurant-page",
-    img: teaImg,
-  },
-  {
-    title: "Pokemon Memory Game",
-    description:
-      "A memory game where a user's score is increased depending on the number of unique pokemons clicked. If users click on the same pokemon their score is reset.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-    liveLink: "https://jacksonj97.github.io/memory-card/",
-    repoLink: "https://github.com/JacksonJ97/memory-card",
-    img: pokemonImg,
   },
 ];
 
