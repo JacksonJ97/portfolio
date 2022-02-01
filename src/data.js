@@ -9,7 +9,7 @@ const projectData = [
   {
     title: "Spacestagram",
     description:
-      "An image sharing application that displays NASA's Astronomy Picture of the Day in the style of an instagram feed. Users can like and share the pictures.",
+      "An image sharing application that displays NASA's Astronomy Picture of the Day in the style of an instagram feed. Users can like and share the pictures. Users can also see all the pictures that they liked in a different tab. State persists if users leave or reload the page.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     liveLink: "https://jacksonj97.github.io/spacestagram/",
     repoLink: "https://github.com/JacksonJ97/spacestagram",
