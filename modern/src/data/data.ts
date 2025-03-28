@@ -1,9 +1,9 @@
-import spaceImg from "./assets/images/space-icon.svg";
-import clothingImg from "./assets/images/clothing-icon.svg";
-import cvImg from "./assets/images/cv-app-icon.svg";
-import pokemonImg from "./assets/images/pokemon-icon.svg";
-import weatherImg from "./assets/images/weather-icon.svg";
-import portfolioImg from "./assets/images/portfolio-icon.svg";
+import spaceImg from "../assets/images/space-icon.svg";
+import clothingImg from "../assets/images/clothing-icon.svg";
+import cvImg from "../assets/images/cv-app-icon.svg";
+import pokemonImg from "../assets/images/pokemon-icon.svg";
+import weatherImg from "../assets/images/weather-icon.svg";
+import portfolioImg from "../assets/images/portfolio-icon.svg";
 
 export const data = [
   {
