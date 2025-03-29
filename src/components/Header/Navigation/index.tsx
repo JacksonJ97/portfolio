@@ -32,12 +32,12 @@ function MobileNav() {
       {showMenu ? (
         <CgClose
           onClick={() => setShowMenu(false)}
-          className="text-2xl cursor-pointer"
+          className="cursor-pointer text-2xl"
         />
       ) : (
         <HiMenu
           onClick={() => setShowMenu(true)}
-          className="text-2xl cursor-pointer"
+          className="cursor-pointer text-2xl"
         />
       )}
 
@@ -46,7 +46,7 @@ function MobileNav() {
           <li>
             <a
               href={`#projects`}
-              className="text-xl hover:text-yellow-400 w-full block p-3"
+              className="block w-full p-3 text-xl hover:text-yellow-400"
             >
               Projects
             </a>
@@ -54,7 +54,7 @@ function MobileNav() {
           <li>
             <a
               href={`#skills`}
-              className="text-xl hover:text-yellow-400 w-full block p-3"
+              className="block w-full p-3 text-xl hover:text-yellow-400"
             >
               Skills
             </a>
@@ -62,7 +62,7 @@ function MobileNav() {
           <li>
             <a
               href={`#about`}
-              className="text-xl hover:text-yellow-400 w-full block p-3"
+              className="block w-full p-3 text-xl hover:text-yellow-400"
             >
               About
             </a>

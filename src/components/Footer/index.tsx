@@ -2,8 +2,8 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="p-8 text-center bg-slate-600">
-      <div className="flex justify-center text-3xl gap-3 mb-4 items-center">
+    <footer className="bg-slate-600 p-8 text-center">
+      <div className="mb-4 flex items-center justify-center gap-3 text-3xl">
         <a
           href="https://github.com/JacksonJ97"
           target="_blank"
@@ -30,7 +30,7 @@ function Footer() {
         </a>
       </div>
       <p className="mb-1">Built and designed by Jackson Jude</p>
-      <p className="opacity-80 text-xs">Last Updated: January 22, 2022</p>
+      <p className="text-xs opacity-80">Last Updated: January 22, 2022</p>
     </footer>
   );
 }
