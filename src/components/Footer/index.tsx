@@ -1,14 +1,14 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="p-8 text-center mt-32 bg-[#393e46] text-[#EEEEEE]">
-      <div className="flex justify-center text-3xl mb-2 gap-1 items-center">
+    <footer className="p-8 text-center bg-slate-600">
+      <div className="flex justify-center text-3xl gap-3 mb-4 items-center">
         <a
           href="https://github.com/JacksonJ97"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-primary"
+          className="hover:text-yellow-400"
         >
           <FaGithub />
         </a>
@@ -17,17 +17,22 @@ export default function Footer() {
           href="https://www.linkedin.com/in/jacksonjude/"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-primary"
+          className="hover:text-yellow-400"
         >
           <FaLinkedin />
         </a>
 
-        <a href="mailto:jacksonjude97@gmail.com" className="hover:text-primary">
+        <a
+          href="mailto:jacksonjude97@gmail.com"
+          className="hover:text-yellow-400"
+        >
           <FaEnvelope />
         </a>
       </div>
-      <p className="my-1">Built and designed by Jackson Jude</p>
-      <p className="opacity-70 text-xs">Last Updated: January 22, 2022</p>
+      <p className="mb-1">Built and designed by Jackson Jude</p>
+      <p className="opacity-80 text-xs">Last Updated: January 22, 2022</p>
     </footer>
   );
 }
+
+export default Footer;

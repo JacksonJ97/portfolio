@@ -6,17 +6,17 @@ function DesktopNav() {
   return (
     <ul className="hidden min-sm:flex min-sm:gap-6">
       <li>
-        <a href={`#projects`} className="text-xl hover:text-yellow-300">
+        <a href={`#projects`} className="text-xl hover:text-yellow-400">
           Projects
         </a>
       </li>
       <li>
-        <a href={`#skills`} className="text-xl hover:text-yellow-300">
+        <a href={`#skills`} className="text-xl hover:text-yellow-400">
           Skills
         </a>
       </li>
       <li>
-        <a href={`#about`} className="text-xl hover:text-yellow-300">
+        <a href={`#about`} className="text-xl hover:text-yellow-400">
           About
         </a>
       </li>
@@ -46,7 +46,7 @@ function MobileNav() {
           <li>
             <a
               href={`#projects`}
-              className="text-xl hover:text-yellow-300 w-full block p-3"
+              className="text-xl hover:text-yellow-400 w-full block p-3"
             >
               Projects
             </a>
@@ -54,7 +54,7 @@ function MobileNav() {
           <li>
             <a
               href={`#skills`}
-              className="text-xl hover:text-yellow-300 w-full block p-3"
+              className="text-xl hover:text-yellow-400 w-full block p-3"
             >
               Skills
             </a>
@@ -62,7 +62,7 @@ function MobileNav() {
           <li>
             <a
               href={`#about`}
-              className="text-xl hover:text-yellow-300 w-full block p-3"
+              className="text-xl hover:text-yellow-400 w-full block p-3"
             >
               About
             </a>
