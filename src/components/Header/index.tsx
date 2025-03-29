@@ -1,22 +1,17 @@
-import logo from "../../assets/images/logo.svg";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 
-const Header = () => {
+function Header() {
   return (
-    <header className="fixed top-0 w-full flex items-center justify-between py-3 bg-[rgba(57,62,70,0.7)] text-[#eeeeee]">
+    <header className="sticky top-0 flex items-center justify-between py-4 px-6 bg-slate-800/60">
       <a
         href="#hero"
-        className="flex items-center justify-center p-1 bg-[#eeeeee] rounded-full ml-5"
+        className="flex items-center justify-center rounded-full w-10 h-10 bg-white text-slate-800 text-xl"
       >
-        <img
-          src={logo}
-          alt="Logo"
-          className="w-8 h-8 rounded-full bg-[#eeeeee] text-[#222831]"
-        />
+        JJ
       </a>
-      <Nav />
+      <Navigation />
     </header>
   );
-};
+}
 
 export default Header;

@@ -1,8 +1,7 @@
-// import Skills from "./Skills";
-// import About from "./About";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import About from "./About";
 
 const Main = () => {
   return (
@@ -10,8 +9,7 @@ const Main = () => {
       <Hero id="hero" />
       <Projects id="projects" />
       <Skills id="skills" />
-      {/* <Skills id="skills" />
-      <About id="about" /> */}
+      <About id="about" />
     </main>
   );
 };
