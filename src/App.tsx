@@ -1,15 +1,13 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Content from "./content";
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-slate-800 text-white font-roboto antialiased">
+    <div className="font-roboto bg-slate-800 text-white antialiased">
       <Header />
-      <Main />
+      <Content />
       <Footer />
     </div>
   );
 }
-
-export default App;

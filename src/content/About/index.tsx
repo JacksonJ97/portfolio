@@ -1,11 +1,13 @@
-import SectionHeader from "../../SectionHeader";
-
-const About = ({ id }: { id: string }) => {
+export default function About() {
   return (
-    <div id={id} className="flex flex-col items-center">
-      <SectionHeader text="About Me" />
-      <div className="bg-[#393e46] rounded-md p-12 w-4/5 max-w-[1200px] shadow-[0_0_16px_rgba(0,0,0,0.15)] max-[635px]:p-6 max-[635px]:w-[90%]">
-        <p className="text-xl leading-relaxed max-[635px]:text-base">
+    <section
+      id="about"
+      className="flex flex-col items-center gap-16 px-4 py-32 min-sm:px-8"
+    >
+      <h2 className="border-b border-yellow-400 pb-1 text-4xl">About Me</h2>
+
+      <div className="rounded-md bg-slate-600 p-6 min-sm:p-12">
+        <p className="max-w-prose leading-relaxed min-sm:text-xl">
           I'm an Electrical Engineering graduate making a career switch into
           software development. With a focus in frontend development, I'm
           passionate about producing elegant and polished user interfaces
@@ -15,8 +17,6 @@ const About = ({ id }: { id: string }) => {
           forward to work alongside amazing programmers!
         </p>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default About;
+}

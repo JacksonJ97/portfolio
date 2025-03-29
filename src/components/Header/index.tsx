@@ -1,6 +1,6 @@
 import Navigation from "./Navigation";
 
-function Header() {
+export default function Header() {
   return (
     <header className="sticky top-0 flex items-center justify-between bg-slate-800/60 px-6 py-4">
       <a
@@ -13,5 +13,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

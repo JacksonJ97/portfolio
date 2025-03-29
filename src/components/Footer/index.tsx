@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-slate-600 p-8 text-center">
-      <div className="mb-4 flex items-center justify-center gap-3 text-3xl">
+      <div className="flex items-center justify-center gap-3 text-3xl">
         <a
           href="https://github.com/JacksonJ97"
           target="_blank"
@@ -29,10 +29,8 @@ function Footer() {
           <FaEnvelope />
         </a>
       </div>
-      <p className="mb-1">Built and designed by Jackson Jude</p>
-      <p className="text-xs opacity-80">Last Updated: January 22, 2022</p>
+      <p className="mt-4">Built and designed by Jackson Jude</p>
+      <p className="mt-1 text-xs opacity-80">Last Updated: January 22, 2022</p>
     </footer>
   );
 }
-
-export default Footer;
