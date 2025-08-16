@@ -1,9 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "jacksonj97.github.io",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://jacksonj97.github.io/jacksonj97.github.io/",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
