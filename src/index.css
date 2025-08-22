@@ -2,9 +2,6 @@
 
 @theme {
   --font-roboto: "Roboto", sans-serif;
-  /* --primary-100: oklch(0.852 0.199 91.936);
-  --background: oklch(0.279 0.041 260.031);
-  --surface: oklch(0.446 0.043 257.281); */
 }
 
 html {
