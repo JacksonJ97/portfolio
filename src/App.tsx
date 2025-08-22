@@ -4,7 +4,7 @@ import Content from "./content";
 
 export default function App() {
   return (
-    <div className="font-roboto bg-slate-800 text-white antialiased">
+    <div className="font-roboto bg-neutral-950 text-white antialiased">
       <Header />
       <Content />
       <Footer />
