@@ -1,15 +1,33 @@
-import Navigation from "./Navigation";
+function Link({ href, text }: { href: string; text: string }) {
+  return (
+    <a
+      href={href}
+      className="text-(--text-color) transition-colors hover:text-(--primary-color)"
+    >
+      {text}
+    </a>
+  );
+}
 
 export default function Header() {
   return (
-    <header className="sticky top-0 flex items-center justify-between bg-slate-800/60 px-6 py-4">
-      <a
-        href="#hero"
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-xl text-slate-800"
-      >
-        JJ
-      </a>
-      <Navigation />
+    <header className="px-4 py-6">
+      <nav>
+        <ul className="flex items-center justify-end gap-2">
+          <li>
+            <Link href="#about" text="About" />
+          </li>
+          <li>
+            <Link href="#skills" text="Skills" />
+          </li>
+          <li>
+            <Link href="#work" text="Work" />
+          </li>
+          <li>
+            <Link href="#projects" text="Projects" />
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
