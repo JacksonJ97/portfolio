@@ -1,6 +1,7 @@
 // import Projects from "./Projects";
 import About from "content/About";
 import Skills from "content/Skills";
+import Work from "content/Work";
 
 export default function Content() {
   return (
@@ -8,6 +9,8 @@ export default function Content() {
       <About />
       <div className="my-6 h-0.25 bg-(--border-color)" />
       <Skills />
+      <div className="my-6 h-0.25 bg-(--border-color)" />
+      <Work />
       <div className="my-6 h-0.25 bg-(--border-color)" />
       {/* <Projects /> */}
     </main>
