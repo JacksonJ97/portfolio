@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* TODO: add font fallbacks */
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-fira-code: "Fira Code", monospace;
+}
+
 :root {
   --background-color: oklch(14.5% 0 0); /* neutral-950 */
   --text-color: oklch(98.5% 0 0); /* neutral-50 */
@@ -7,10 +14,6 @@
   --primary-color: oklch(72.3% 0.219 149.579); /* green-500 */
   --border-color: oklch(27.4% 0.006 286.033); /* zinc-800 */
   --surface-color: oklch(21% 0.006 285.885); /* zinc-900 */
-}
-
-@theme {
-  --font-inter: "Inter", sans-serif;
 }
 
 body {

@@ -8,9 +8,12 @@ import Linkedin from "components/Icons/Linkedin";
 export default function About() {
   return (
     <section id="about">
-      <h1>Jackson Jude</h1>
-      <p className="mt-4 text-sm leading-relaxed">
-        I'm Jackson, a full stack software engineer, who loves building web
+      <h2 className="font-fira-code mb-4 text-2xl font-medium uppercase">
+        About Me
+      </h2>
+
+      <p className="mb-8 text-sm leading-relaxed">
+        I'm Jackson Jude, a full stack software engineer, who loves building web
         applications. I'm an Electrical Engineering graduate making a career
         switch into software development. With a focus in frontend development,
         I'm passionate about producing elegant and polished user interfaces
@@ -20,7 +23,7 @@ export default function About() {
         to work alongside amazing programmers!
       </p>
 
-      <div className="mt-8 flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         <LinkButton
           href="mailto:jacksonjude97@gmail.com"
           className="flex items-center gap-2"
