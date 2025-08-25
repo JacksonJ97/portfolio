@@ -1,6 +1,6 @@
 export default function Work() {
   return (
-    <section id="work">
+    <section id="work" className="scroll-mt-24">
       <h2 className="font-fira-code mb-4 text-2xl font-medium uppercase">
         Work
       </h2>

@@ -90,7 +90,7 @@ function List({
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className="scroll-mt-24">
       <h2 className="font-fira-code mb-4 text-2xl font-medium uppercase">
         Skills
       </h2>

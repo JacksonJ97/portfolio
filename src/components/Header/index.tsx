@@ -11,7 +11,7 @@ function Link({ href, text }: { href: string; text: string }) {
 
 export default function Header() {
   return (
-    <header className="px-4 py-6">
+    <header className="sticky top-0 bg-(--background-color) px-4 py-6">
       <nav>
         <ul className="flex items-center justify-end gap-2">
           <li>

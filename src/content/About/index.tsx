@@ -7,7 +7,7 @@ import Linkedin from "components/Icons/Linkedin";
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-32">
       <h2 className="font-fira-code mb-4 text-2xl font-medium uppercase">
         About Me
       </h2>
