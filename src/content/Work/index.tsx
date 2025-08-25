@@ -5,12 +5,12 @@ export default function Work() {
         Work
       </h2>
 
-      <div className="mb-1 flex items-center justify-between">
-        <p className="font-medium text-(--text-color)">PheedLoop</p>
+      <div className="min-xs:flex-row min-xs:items-center mb-1 flex flex-col justify-between gap-1">
+        <h3 className="font-medium text-(--text-color)">PheedLoop</h3>
         <p className="text-sm text-(--text-muted-color)">Feb 2022 - Mar 2025</p>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="min-xs:flex-row min-xs:items-center flex flex-col justify-between gap-1">
         <p className="text-sm text-(--text-muted-color)">
           Full Stack Software Engineer
         </p>
