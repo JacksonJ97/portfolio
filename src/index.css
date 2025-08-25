@@ -10,11 +10,12 @@
 
 :root {
   --background-color: oklch(14.5% 0 0); /* neutral-950 */
+  --background-subtle-color: oklch(27.4% 0.006 286.033); /* zinc-800 */
+  --background-surface-color: oklch(21% 0.006 285.885); /* zinc-900 */
   --text-color: oklch(98.5% 0 0); /* neutral-50 */
   --text-muted-color: oklch(70.7% 0.022 261.325); /* gray-400 */
-  --primary-color: oklch(72.3% 0.219 149.579); /* green-500 */
   --border-color: oklch(27.4% 0.006 286.033); /* zinc-800 */
-  --surface-color: oklch(21% 0.006 285.885); /* zinc-900 */
+  --primary-color: oklch(72.3% 0.219 149.579); /* green-500 */
 }
 
 html {

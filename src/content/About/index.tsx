@@ -8,11 +8,11 @@ import Linkedin from "components/Icons/Linkedin";
 export default function About() {
   return (
     <section id="about" className="scroll-mt-32">
-      <h2 className="font-fira-code mb-4 text-2xl font-medium uppercase">
+      <h2 className="font-fira-code mb-4 text-2xl font-medium text-(--text-color) uppercase">
         About Me
       </h2>
 
-      <p className="mb-8 text-sm leading-relaxed">
+      <p className="mb-8 text-sm leading-relaxed text-(--text-color)">
         I'm Jackson Jude, a full stack software engineer, who loves building web
         applications. I'm an Electrical Engineering graduate making a career
         switch into software development. With a focus in frontend development,

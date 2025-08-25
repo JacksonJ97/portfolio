@@ -15,7 +15,7 @@ export default function LinkButton({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "rounded border border-(--border-color) bg-(--surface-color) px-3 py-2 text-xs font-medium text-(--text-color) transition-colors hover:border-(--primary-color)",
+        "rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2 text-xs font-medium text-(--text-color) transition-colors hover:border-(--primary-color)",
         className,
       )}
     >

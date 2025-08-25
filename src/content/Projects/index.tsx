@@ -1,3 +1,6 @@
+import Github from "components/Icons/Github";
+import ExternalLink from "components/Icons/ExternalLink";
+
 type Project = {
   title: string;
   description: string;
@@ -35,38 +38,42 @@ const projects: Project[] = [
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="rounded border border-(--border-color) bg-(--surface-color) px-4 py-5">
-      <h3 className="mb-2 text-lg font-medium text-(--text-color)">
-        {project.title}
-      </h3>
+    <div className="rounded border border-(--border-color) bg-(--background-surface-color) px-4 py-5">
+      <div className="mb-2 flex items-center justify-between gap-1">
+        <h3 className="text-lg font-medium text-(--text-color)">
+          {project.title}
+        </h3>
 
-      <p className="mb-2 text-sm leading-relaxed text-(--text-muted-color)">
+        <div className="flex items-center gap-1">
+          <a
+            href={project.sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View source code on GitHub"
+            className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
+          >
+            <Github className="h-4.5 w-4.5" />
+          </a>
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View live site"
+            className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
+          >
+            <ExternalLink className="h-4.5 w-4.5" />
+          </a>
+        </div>
+      </div>
+
+      <p className="mb-4 text-sm leading-relaxed text-(--text-muted-color)">
         {project.description}
       </p>
-
-      <div className="mb-4 flex items-center gap-2">
-        <a
-          href={project.sourceLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-(--text-color) underline transition-colors hover:text-(--primary-color)"
-        >
-          Source
-        </a>
-        <a
-          href={project.liveLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-(--text-color) underline transition-colors hover:text-(--primary-color)"
-        >
-          Live
-        </a>
-      </div>
 
       <ul className="flex flex-wrap items-center gap-2">
         {project.technologies.map((technology, index) => (
           <li
-            className="rounded border border-(--border-color) px-3 py-2 text-xs text-(--text-color)"
+            className="rounded-md bg-(--background-subtle-color) px-2 py-1 text-xs text-(--text-color)"
             key={index}
           >
             {technology}
@@ -80,7 +87,7 @@ function ProjectCard({ project }: { project: Project }) {
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-24">
-      <h2 className="font-fira-code mb-6 text-2xl font-medium uppercase">
+      <h2 className="font-fira-code mb-6 text-2xl font-medium text-(--text-color) uppercase">
         Projects
       </h2>
 
