@@ -17,10 +17,20 @@ import githubIcon from "assets/images/skills/github.svg";
 import figmaIcon from "assets/images/skills/figma.svg";
 import postmanIcon from "assets/images/skills/postman.svg";
 
-const items = [
+type Technology = {
+  label: string;
+  icon: string;
+};
+
+type Skill = {
+  title: string;
+  technologies: Technology[];
+};
+
+const skills: Skill[] = [
   {
     title: "Languages",
-    skills: [
+    technologies: [
       { label: "HTML", icon: htmlIcon },
       { label: "CSS", icon: cssIcon },
       { label: "JavaScript", icon: jsIcon },
@@ -31,7 +41,7 @@ const items = [
   },
   {
     title: "Frameworks & Libraries",
-    skills: [
+    technologies: [
       { label: "React", icon: reactIcon },
       { label: "Next.js", icon: nextIcon },
       { label: "Django", icon: djangoIcon },
@@ -43,11 +53,11 @@ const items = [
   },
   {
     title: "Databases",
-    skills: [{ label: "PostgreSQL", icon: pgsqlIcon }],
+    technologies: [{ label: "PostgreSQL", icon: pgsqlIcon }],
   },
   {
     title: "Tools",
-    skills: [
+    technologies: [
       { label: "Git", icon: gitIcon },
       { label: "GitHub", icon: githubIcon },
       { label: "Figma", icon: figmaIcon },
@@ -56,7 +66,7 @@ const items = [
   },
 ];
 
-function Tag({ label, icon }: { label: string; icon: string }) {
+function TechnologyTag({ label, icon }: Technology) {
   return (
     <div className="flex items-center gap-2 rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2">
       <img src={icon} alt={`${label} logo`} className="h-4 w-4" />
@@ -65,22 +75,16 @@ function Tag({ label, icon }: { label: string; icon: string }) {
   );
 }
 
-function List({
-  title,
-  skills,
-}: {
-  title: string;
-  skills: { label: string; icon: string }[];
-}) {
+function SkillList({ title, technologies }: Skill) {
   return (
     <div>
       <h3 className="font-fira-code mb-2 text-sm font-medium text-(--text-muted-color)">
         {title}
       </h3>
       <ul className="flex flex-wrap items-center gap-2">
-        {skills.map((skill, index) => (
+        {technologies.map((technology, index) => (
           <li key={index}>
-            <Tag label={skill.label} icon={skill.icon} />
+            <TechnologyTag label={technology.label} icon={technology.icon} />
           </li>
         ))}
       </ul>
@@ -91,13 +95,17 @@ function List({
 export default function Skills() {
   return (
     <section id="skills" className="scroll-mt-24">
-      <h2 className="font-fira-code mb-4 text-2xl font-medium uppercase">
+      <h2 className="font-fira-code mb-4 text-2xl font-medium text-(--text-color) uppercase">
         Skills
       </h2>
 
       <div className="flex flex-col gap-4">
-        {items.map((item) => (
-          <List title={item.title} skills={item.skills} key={item.title} />
+        {skills.map((item) => (
+          <SkillList
+            title={item.title}
+            technologies={item.technologies}
+            key={item.title}
+          />
         ))}
       </div>
     </section>
