@@ -94,7 +94,7 @@ function SkillList({ title, technologies }: Skill) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="scroll-mt-24">
+    <section id="skills" className="scroll-mt-20">
       <h2 className="font-fira-code mb-4 text-2xl font-medium text-(--text-color) uppercase">
         Skills
       </h2>
