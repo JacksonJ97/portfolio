@@ -1,8 +1,6 @@
 # Personal Portfolio
 
-A personal portfolio website to showcase my projects, share some details about myself, and to give a resource for people to connect with me!
-
-## My process
+A portfolio website highlighting my professional experience, projects, and technical skills, designed to share my story and make it easy for people to connect.
 
 ### Built with
 
@@ -12,4 +10,4 @@ A personal portfolio website to showcase my projects, share some details about m
 
 ### Live URL
 
-https://jacksonj97.github.io/
+https://portfolio-psi-weld-98.vercel.app/
