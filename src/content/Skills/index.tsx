@@ -47,7 +47,7 @@ const skills: Skill[] = [
       { label: "Django", icon: djangoIcon },
       { label: "Node.js", icon: nodeIcon },
       { label: "Express.js", icon: expressIcon },
-      { label: "TailwindCSS", icon: tailwindIcon },
+      { label: "Tailwind CSS", icon: tailwindIcon },
       { label: "TanStack Query", icon: tanstackIcon },
     ],
   },

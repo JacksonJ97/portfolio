@@ -3,6 +3,7 @@ import ExternalLink from "components/Icons/ExternalLink";
 
 type Project = {
   title: string;
+  yearBuilt: string;
   description: string;
   technologies: string[];
   liveLink: string;
@@ -12,24 +13,34 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Spacestagram",
+    yearBuilt: "2025",
     description:
-      "An image sharing application that displays NASA's Astronomy Picture of the Day in the style of an instagram feed. Users can like and share the pictures. Users can also view all of their liked pictures.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-    liveLink: "https://jacksonj97.github.io/spacestagram/",
+      "Spacestagram is an application that reimagines NASA's Astronomy Picture of the Day as an Instagram style feed. Users can explore space photography with modern social features like infinite scrolling, liking posts, sharing via link, and saving personal favorites.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Express.js",
+      "PostgreSQL",
+    ],
+    liveLink: "https://spacestagram-tan.vercel.app/",
     sourceLink: "https://github.com/JacksonJ97/spacestagram",
   },
   {
     title: "Clothing Store",
+    yearBuilt: "2021",
     description:
-      "A clothing store website that allows users to browse through products and add them to a shopping cart. In the shopping cart, users can increase/decrease the quantity, remove the item, and/or checkout.",
+      "Clothing Store is an application that lets users browse products and manage a shopping cart with features like adding products, adjusting quantities, and removing products.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     liveLink: "https://jacksonj97.github.io/clothing-store/",
     sourceLink: "https://github.com/JacksonJ97/clothing-store",
   },
   {
-    title: "CV Application",
+    title: "Resume Builder",
+    yearBuilt: "2021",
     description:
-      "A resume builder that takes the user's inputs and displays a formatted resume. Users can add/delete any number of experience and education fields. Users can also load an example resume.",
+      "Resume Builder is an application that transforms user inputs into a polished, formatted resume. Users can add or remove experience and education sections dynamically, and even load an example resume for inspiration.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     liveLink: "https://jacksonj97.github.io/cv-application/",
     sourceLink: "https://github.com/JacksonJ97/cv-application",
@@ -65,6 +76,10 @@ function ProjectCard({ project }: { project: Project }) {
           </a>
         </div>
       </div>
+
+      <p className="mb-2 text-xs text-(--text-muted-color)">
+        Built in {project.yearBuilt}
+      </p>
 
       <p className="mb-4 text-sm leading-relaxed text-(--text-muted-color)">
         {project.description}
