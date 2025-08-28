@@ -14,6 +14,7 @@ import tanstackIcon from "assets/images/skills/tanstack.svg";
 import pgsqlIcon from "assets/images/skills/pgsql.svg";
 import gitIcon from "assets/images/skills/git.svg";
 import githubIcon from "assets/images/skills/github.svg";
+import vsCodeIcon from "assets/images/skills/vscode.svg";
 import figmaIcon from "assets/images/skills/figma.svg";
 import postmanIcon from "assets/images/skills/postman.svg";
 
@@ -60,6 +61,7 @@ const skills: Skill[] = [
     technologies: [
       { label: "Git", icon: gitIcon },
       { label: "GitHub", icon: githubIcon },
+      { label: "VS Code", icon: vsCodeIcon },
       { label: "Figma", icon: figmaIcon },
       { label: "Postman", icon: postmanIcon },
     ],

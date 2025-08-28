@@ -50,7 +50,7 @@ const projects: Project[] = [
 function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded border border-(--border-color) bg-(--background-surface-color) px-4 pt-4 pb-5">
-      <div className="mb-2 flex items-center justify-between gap-1">
+      <div className="mb-1 flex items-center justify-between gap-1">
         <h3 className="text-lg font-medium text-(--text-color)">
           {project.title}
         </h3>
