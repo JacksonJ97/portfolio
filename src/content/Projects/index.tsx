@@ -101,7 +101,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="scroll-mt-24">
+    <section id="projects">
       <h2 className="font-fira-code mb-6 text-2xl font-medium text-(--text-color) uppercase">
         Projects
       </h2>
