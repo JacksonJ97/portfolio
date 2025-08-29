@@ -10,4 +10,4 @@ A portfolio website highlighting my professional experience, projects, and techn
 
 ### Live URL
 
-https://portfolio-psi-weld-98.vercel.app/
+https://jacksonjude.dev/
