@@ -71,7 +71,7 @@ const skills: Skill[] = [
 function TechnologyTag({ label, icon }: Technology) {
   return (
     <div className="flex items-center gap-2 rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2">
-      <img src={icon} alt={`${label} logo`} className="h-4 w-4" />
+      <img src={icon} alt={`${label} logo`} className="size-4" />
       <p className="text-xs font-medium text-(--text-color)">{label}</p>
     </div>
   );

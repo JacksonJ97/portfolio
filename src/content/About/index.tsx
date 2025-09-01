@@ -43,25 +43,25 @@ export default function About() {
           href="mailto:jacksonjude97@gmail.com"
           className="flex items-center gap-2"
         >
-          <Mail className="h-4 w-4 text-(--text-muted-color)" />
+          <Mail className="size-4 text-(--text-muted-color)" />
           Email
         </LinkButton>
         <LinkButton href={resume} className="flex items-center gap-2">
-          <Download className="h-4 w-4 text-(--text-muted-color)" />
+          <Download className="size-4 text-(--text-muted-color)" />
           Resume
         </LinkButton>
         <LinkButton
           href="https://github.com/JacksonJ97"
           className="flex items-center gap-2"
         >
-          <Github className="h-4 w-4 text-(--text-muted-color)" />
+          <Github className="size-4 text-(--text-muted-color)" />
           GitHub
         </LinkButton>
         <LinkButton
           href="https://www.linkedin.com/in/jacksonjude/"
           className="flex items-center gap-2"
         >
-          <Linkedin className="h-4 w-4 text-(--text-muted-color)" />
+          <Linkedin className="size-4 text-(--text-muted-color)" />
           LinkedIn
         </LinkButton>
       </div>

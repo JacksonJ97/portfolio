@@ -63,7 +63,7 @@ function ProjectCard({ project }: { project: Project }) {
             aria-label="View source code on GitHub"
             className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
           >
-            <Github className="h-4.5 w-4.5" />
+            <Github className="size-4.5" />
           </a>
           <a
             href={project.liveLink}
@@ -72,7 +72,7 @@ function ProjectCard({ project }: { project: Project }) {
             aria-label="View live site"
             className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
           >
-            <ExternalLink className="h-4.5 w-4.5" />
+            <ExternalLink className="size-4.5" />
           </a>
         </div>
       </div>
