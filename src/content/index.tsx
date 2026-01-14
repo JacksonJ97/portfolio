@@ -7,11 +7,11 @@ export default function Content() {
   return (
     <main className="mx-auto max-w-prose px-4 py-10">
       <About />
-      <div className="my-6 h-0.25 bg-(--border-color)" />
+      <div className="my-6 h-px bg-(--border-color)" />
       <Work />
-      <div className="my-6 h-0.25 bg-(--border-color)" />
+      <div className="my-6 h-px bg-(--border-color)" />
       <Skills />
-      <div className="my-6 h-0.25 bg-(--border-color)" />
+      <div className="my-6 h-px bg-(--border-color)" />
       <Projects />
     </main>
   );
