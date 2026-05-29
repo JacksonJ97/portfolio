@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="mx-auto max-w-prose px-4 py-6">
       <p className="text-xs text-(--text-muted-color)">Built by Jackson Jude</p>
       <p className="text-xs text-(--text-muted-color)">
-        Last updated: April 2026
+        Last updated: May 2026
       </p>
     </footer>
   );

@@ -13,7 +13,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Spacestagram",
-    yearBuilt: "2025",
+    yearBuilt: "2026",
     description:
       "Spacestagram is an application that reimagines NASA's Astronomy Picture of the Day as an Instagram style feed. Users can explore space photography with modern social features like infinite scrolling, liking posts, sharing via link, and saving personal favorites.",
     technologies: [

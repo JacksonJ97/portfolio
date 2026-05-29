@@ -1,22 +1,27 @@
+import reactIcon from "assets/images/skills/react.svg";
+import tsIcon from "assets/images/skills/ts.svg";
+import jsIcon from "assets/images/skills/js.svg";
+import nextIcon from "assets/images/skills/next.svg";
+import tanstackIcon from "assets/images/skills/tanstack.svg";
 import htmlIcon from "assets/images/skills/html.svg";
 import cssIcon from "assets/images/skills/css.svg";
-import jsIcon from "assets/images/skills/js.svg";
-import tsIcon from "assets/images/skills/ts.svg";
+import tailwindIcon from "assets/images/skills/tailwind.svg";
 import pythonIcon from "assets/images/skills/python.svg";
-import sqlIcon from "assets/images/skills/sql.svg";
-import reactIcon from "assets/images/skills/react.svg";
-import nextIcon from "assets/images/skills/next.svg";
 import djangoIcon from "assets/images/skills/django.svg";
 import nodeIcon from "assets/images/skills/node.svg";
 import expressIcon from "assets/images/skills/express.svg";
-import tailwindIcon from "assets/images/skills/tailwind.svg";
-import tanstackIcon from "assets/images/skills/tanstack.svg";
 import pgsqlIcon from "assets/images/skills/pgsql.svg";
+import jestIcon from "assets/images/skills/jest.svg";
+import testingLibraryIcon from "assets/images/skills/testing-library.png";
+import vitestIcon from "assets/images/skills/vitest.svg";
+import pytestIcon from "assets/images/skills/pytest.svg";
 import gitIcon from "assets/images/skills/git.svg";
 import githubIcon from "assets/images/skills/github.svg";
+import dockerIcon from "assets/images/skills/docker.svg";
 import vsCodeIcon from "assets/images/skills/vscode.svg";
 import figmaIcon from "assets/images/skills/figma.svg";
 import postmanIcon from "assets/images/skills/postman.svg";
+import codexIcon from "assets/images/skills/codex.svg";
 
 type Technology = {
   label: string;
@@ -30,26 +35,25 @@ type Skill = {
 
 const skills: Skill[] = [
   {
-    title: "Languages",
+    title: "Frontend",
     technologies: [
+      { label: "React", icon: reactIcon },
+      { label: "TypeScript", icon: tsIcon },
+      { label: "JavaScript", icon: jsIcon },
+      { label: "Next.js", icon: nextIcon },
+      { label: "TanStack Query", icon: tanstackIcon },
       { label: "HTML", icon: htmlIcon },
       { label: "CSS", icon: cssIcon },
-      { label: "JavaScript", icon: jsIcon },
-      { label: "TypeScript", icon: tsIcon },
-      { label: "Python", icon: pythonIcon },
-      { label: "SQL", icon: sqlIcon },
+      { label: "Tailwind CSS", icon: tailwindIcon },
     ],
   },
   {
-    title: "Frameworks & Libraries",
+    title: "Backend",
     technologies: [
-      { label: "React", icon: reactIcon },
-      { label: "Next.js", icon: nextIcon },
+      { label: "Python", icon: pythonIcon },
       { label: "Django", icon: djangoIcon },
       { label: "Node.js", icon: nodeIcon },
       { label: "Express.js", icon: expressIcon },
-      { label: "Tailwind CSS", icon: tailwindIcon },
-      { label: "TanStack Query", icon: tanstackIcon },
     ],
   },
   {
@@ -57,13 +61,24 @@ const skills: Skill[] = [
     technologies: [{ label: "PostgreSQL", icon: pgsqlIcon }],
   },
   {
+    title: "Testing",
+    technologies: [
+      { label: "Jest", icon: jestIcon },
+      { label: "React Testing Library", icon: testingLibraryIcon },
+      { label: "Vitest", icon: vitestIcon },
+      { label: "Pytest", icon: pytestIcon },
+    ],
+  },
+  {
     title: "Tools",
     technologies: [
       { label: "Git", icon: gitIcon },
       { label: "GitHub", icon: githubIcon },
+      { label: "Docker", icon: dockerIcon },
       { label: "VS Code", icon: vsCodeIcon },
       { label: "Figma", icon: figmaIcon },
       { label: "Postman", icon: postmanIcon },
+      { label: "Codex", icon: codexIcon },
     ],
   },
 ];
