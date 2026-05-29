@@ -18,8 +18,10 @@ export default defineConfig([
       prettier,
     ],
     languageOptions: {
-      ecmaVersion: 2020,
       globals: globals.browser,
+    },
+    rules: {
+      "no-console": ["warn", { allow: ["warn", "error"] }],
     },
   },
 ]);
