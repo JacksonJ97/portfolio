@@ -5,7 +5,7 @@ import Projects from "content/Projects";
 
 export default function Content() {
   return (
-    <main className="mx-auto max-w-prose px-4 py-10">
+    <main className="mx-auto max-w-prose px-4 py-8">
       <About />
       <div className="my-6 h-px bg-(--border-color)" />
       <Work />
