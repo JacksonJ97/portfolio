@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["oxc", "react", "unicorn", "typescript"],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "builtin": true
+  },
+  "ignorePatterns": ["dist"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "typescript/no-explicit-any": "error",
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["error", { "allowConstantExport": true }]
+  },
+  "overrides": [
+    {
+      "files": ["src/**"],
+      "env": {
+        "browser": true
+      }
+    },
+    {
+      "files": ["vite.config.ts"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}

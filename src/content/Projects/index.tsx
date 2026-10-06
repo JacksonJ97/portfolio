@@ -51,9 +51,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded border border-(--border-color) bg-(--background-surface-color) px-4 pt-4 pb-5">
       <div className="mb-1 flex items-center justify-between gap-1">
-        <h3 className="text-lg font-medium text-(--text-color)">
-          {project.title}
-        </h3>
+        <h3 className="text-lg font-medium text-(--text-color)">{project.title}</h3>
 
         <div className="flex items-center gap-1">
           <a
@@ -77,9 +75,7 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      <p className="mb-2 text-xs text-(--text-muted-color)">
-        Built in {project.yearBuilt}
-      </p>
+      <p className="mb-2 text-xs text-(--text-muted-color)">Built in {project.yearBuilt}</p>
 
       <p className="mb-4 text-sm leading-relaxed text-(--text-muted-color)">
         {project.description}
@@ -102,7 +98,7 @@ function ProjectCard({ project }: { project: Project }) {
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-20">
-      <h2 className="font-fira-code mb-6 text-2xl font-medium text-(--text-color) uppercase">
+      <h2 className="mb-6 font-fira-code text-2xl font-medium text-(--text-color) uppercase">
         Projects
       </h2>
 
