@@ -13,20 +13,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "cn": "^0.4.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "cn": "^0.5.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.6.4",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
-    "tailwindcss": "^4.3.3",
+    "@vitejs/plugin-react": "^6.3.0",
+    "oxfmt": "^0.77.0",
+    "oxlint": "^1.92.0",
+    "tailwindcss": "^4.3.5",
     "typescript": "^7.0.2",
-    "vite": "^8.3.2"
+    "vite": "^8.3.6"
   }
 }
