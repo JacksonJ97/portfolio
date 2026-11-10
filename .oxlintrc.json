@@ -4,16 +4,13 @@
   "categories": {
     "correctness": "error"
   },
-  "env": {
-    "builtin": true
-  },
   "ignorePatterns": ["dist"],
   "rules": {
-    "no-unused-vars": "warn",
-    "no-console": ["warn", { "allow": ["warn", "error"] }],
-    "typescript/no-explicit-any": "error",
     "react/rules-of-hooks": "error",
-    "react/only-export-components": ["error", { "allowConstantExport": true }]
+    "react/only-export-components": ["error", { "allowConstantExport": true }],
+    "no-console": ["warn"],
+    "no-unused-vars": "warn",
+    "typescript/no-explicit-any": "error"
   },
   "overrides": [
     {
