@@ -54,6 +54,7 @@ const skills: Skill[] = [
       { label: "Django", icon: djangoIcon },
       { label: "Node.js", icon: nodeIcon },
       { label: "Express.js", icon: expressIcon },
+      { label: "Hono", icon: "" }, // TODO Add image
     ],
   },
   {
@@ -79,6 +80,7 @@ const skills: Skill[] = [
       { label: "Figma", icon: figmaIcon },
       { label: "Postman", icon: postmanIcon },
       { label: "Codex", icon: codexIcon },
+      { label: "Claude Code", icon: "" }, // TODO Add image
     ],
   },
 ];

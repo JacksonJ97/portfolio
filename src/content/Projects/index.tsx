@@ -6,11 +6,29 @@ type Project = {
   yearBuilt: string;
   description: string;
   technologies: string[];
-  liveLink: string;
+  liveLink: string | null;
   sourceLink: string;
 };
 
 const projects: Project[] = [
+  {
+    title: "Pokemon Center Queue Detector",
+    yearBuilt: "2026",
+    description:
+      "A python script that monitors for a potential Pokemon Center queue and notifies users via Discord when a potential queue is active.",
+    technologies: ["Python"],
+    liveLink: null,
+    sourceLink: "https://github.com/JacksonJ97/pokemon-center-queue-detector",
+  },
+  {
+    title: "Crunchyroll Advanced Video Controls",
+    yearBuilt: "2026",
+    description:
+      "A Chrome extension that adds 1.25x, 1.5x, and 2x playback options directly to Crunchyroll's video player and provides keyboard shortcuts to rewind and skip forward.",
+    technologies: ["TypeScript"],
+    liveLink: null,
+    sourceLink: "https://github.com/JacksonJ97/crunchyroll-advanced-controls",
+  },
   {
     title: "Spacestagram",
     yearBuilt: "2026",
@@ -54,6 +72,17 @@ function ProjectCard({ project }: { project: Project }) {
         <h3 className="text-lg font-medium text-(--text-color)">{project.title}</h3>
 
         <div className="flex items-center gap-1">
+          {project.liveLink && (
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View live site"
+              className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
+            >
+              <ExternalLink className="size-4.5" />
+            </a>
+          )}
           <a
             href={project.sourceLink}
             target="_blank"
@@ -62,15 +91,6 @@ function ProjectCard({ project }: { project: Project }) {
             className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
           >
             <Github className="size-4.5" />
-          </a>
-          <a
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View live site"
-            className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
-          >
-            <ExternalLink className="size-4.5" />
           </a>
         </div>
       </div>
