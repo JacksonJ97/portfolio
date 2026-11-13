@@ -12,6 +12,15 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Leetcode Tracker",
+    yearBuilt: "2026",
+    description:
+      "A web application that helps users track their Leetcode problem-solving progress and view their performance analytics.",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Hono", "PostgreSQL"],
+    liveLink: "https://leetcode-tracker-gold.vercel.app/",
+    sourceLink: "https://github.com/JacksonJ97/leetcode-tracker",
+  },
+  {
     title: "Pokemon Center Queue Detector",
     yearBuilt: "2026",
     description:
