@@ -30,7 +30,7 @@ const projects: Project[] = [
     sourceLink: "https://github.com/JacksonJ97/pokemon-center-queue-detector",
   },
   {
-    title: "Crunchyroll Advanced Video Controls",
+    title: "Crunchyroll Advanced Controls",
     yearBuilt: "2026",
     description:
       "A Chrome extension that adds 1.25x, 1.5x, and 2x playback options directly to Crunchyroll's video player and provides keyboard shortcuts to rewind and skip forward.",

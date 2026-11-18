@@ -1,28 +1,26 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["oxc", "react", "unicorn", "typescript"],
+  "plugins": ["oxc", "react", "unicorn", "jsx-a11y", "typescript"],
   "categories": {
     "correctness": "error"
   },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["error", { "allowConstantExport": true }],
-    "no-console": "warn",
-    "no-unused-vars": "warn",
-    "typescript/no-explicit-any": "error"
+  "env": {
+    "browser": true
   },
   "overrides": [
     {
-      "files": ["src/**"],
-      "env": {
-        "browser": true
-      }
-    },
-    {
       "files": ["vite.config.ts"],
       "env": {
-        "node": true
+        "node": true,
+        "browser": false
       }
     }
-  ]
+  ],
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "typescript/no-explicit-any": "error",
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["error", { "allowConstantExport": true }]
+  }
 }
