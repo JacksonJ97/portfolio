@@ -1,8 +1,8 @@
 import resume from "assets/resume.pdf";
 import { LinkButton } from "components/link-button";
 import { Mail } from "components/icons/mail";
-import { Download } from "components/icons/download";
 import { GitHub } from "components/icons/github";
+import { Download } from "components/icons/download";
 import { Linkedin } from "components/icons/linkedin";
 
 export default function About() {
