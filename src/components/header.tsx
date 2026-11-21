@@ -2,7 +2,7 @@ function Link({ href, text }: { href: string; text: string }) {
   return (
     <a
       href={href}
-      className="font-fira-code uppercase transition-colors hover:text-(--primary-color)"
+      className="rounded px-1.5 py-0.5 font-fira-code uppercase transition-colors hover:text-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
     >
       {text}
     </a>

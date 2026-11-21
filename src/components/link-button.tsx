@@ -15,7 +15,7 @@ function LinkButton({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "flex items-center gap-2 rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2 text-xs font-medium transition-colors hover:border-(--primary-color)",
+        "flex items-center gap-2 rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2 text-xs font-medium transition-colors hover:border-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white",
         className,
       )}
     >

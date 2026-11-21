@@ -64,7 +64,7 @@ function ProjectCard({ project }: { project: Project }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View live site"
-              className="rounded p-1.5 transition-colors hover:bg-(--background-subtle-color) focus-visible:bg-(--background-subtle-color)"
+              className="rounded border border-transparent p-1.5 transition-colors hover:border-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
             >
               <ExternalLink aria-hidden="true" className="size-4.5" />
             </a>
@@ -74,7 +74,7 @@ function ProjectCard({ project }: { project: Project }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View source code on GitHub"
-            className="rounded p-1.5 transition-colors hover:bg-(--background-subtle-color) focus-visible:bg-(--background-subtle-color)"
+            className="rounded border border-transparent p-1.5 transition-colors hover:border-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
           >
             <GitHub aria-hidden="true" className="size-4.5" />
           </a>
