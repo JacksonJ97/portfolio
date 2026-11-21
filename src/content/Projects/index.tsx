@@ -3,7 +3,6 @@ import ExternalLink from "components/Icons/ExternalLink";
 
 type Project = {
   title: string;
-  yearBuilt: string;
   description: string;
   technologies: string[];
   liveLink: string | null;
@@ -13,36 +12,32 @@ type Project = {
 const projects: Project[] = [
   {
     title: "LeetCode Tracker",
-    yearBuilt: "2026",
     description:
-      "A web application that helps users track their LeetCode problem-solving progress and view their performance analytics.",
+      "A dashboard that turns solved LeetCode problems into a spaced repetition review schedule based on how confident you felt solving each one. Performance analytics highlight weak areas and recommend problems to practice next.",
     technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Hono", "PostgreSQL"],
     liveLink: "https://leetcode-tracker-gold.vercel.app/",
     sourceLink: "https://github.com/JacksonJ97/leetcode-tracker",
   },
   {
     title: "Pokemon Center Queue Detector",
-    yearBuilt: "2026",
     description:
-      "A Python script that monitors Pokémon Center for a live queue and sends alerts via Discord.",
+      "A Python script that monitors Pokémon Center and sends a Discord alert as soon as it detects a virtual queue.",
     technologies: ["Python"],
     liveLink: null,
     sourceLink: "https://github.com/JacksonJ97/pokemon-center-queue-detector",
   },
   {
     title: "Crunchyroll Advanced Controls",
-    yearBuilt: "2026",
     description:
-      "A Chrome extension that adds 1.25x, 1.5x, and 2x playback options directly to Crunchyroll's video player and provides keyboard shortcuts to rewind and skip forward.",
+      "A Chrome extension that adds 1.25x, 1.5x, and 2x playback speeds directly to Crunchyroll's video player, with keyboard shortcuts to rewind or skip ahead.",
     technologies: ["TypeScript"],
     liveLink: null,
     sourceLink: "https://github.com/JacksonJ97/crunchyroll-advanced-controls",
   },
   {
     title: "Spacestagram",
-    yearBuilt: "2026",
     description:
-      "A web application that displays NASA's Astronomy Picture of the Day as an Instagram style feed. Users can explore space photography with modern social features like infinite scrolling, liking posts, sharing via link, and saving personal favorites.",
+      "An Instagram-style feed for NASA's Astronomy Picture of the Day. Browse past images in a continuous feed, save favorites, and share individual posts.",
     technologies: [
       "React",
       "TypeScript",
@@ -85,8 +80,6 @@ function ProjectCard({ project }: { project: Project }) {
           </a>
         </div>
       </div>
-
-      <p className="mb-2 text-xs text-(--text-muted-color)">Built in {project.yearBuilt}</p>
 
       <p className="mb-4 text-sm leading-relaxed text-(--text-muted-color)">
         {project.description}
