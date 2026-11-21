@@ -1,5 +1,5 @@
 import resume from "assets/resume.pdf";
-import LinkButton from "components/LinkButton";
+import { LinkButton } from "components/link-button";
 import { Mail } from "components/icons/mail";
 import { Download } from "components/icons/download";
 import { GitHub } from "components/icons/github";

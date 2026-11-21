@@ -1,6 +1,6 @@
 import { cn } from "utils/functions";
 
-export default function LinkButton({
+function LinkButton({
   href,
   children,
   className,
@@ -23,3 +23,5 @@ export default function LinkButton({
     </a>
   );
 }
+
+export { LinkButton };

@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const TestingLibrary = (props: SVGProps<SVGSVGElement>) => {
+function TestingLibrary(props: SVGProps<SVGSVGElement>) {
   return (
     <svg width="64" height="64" {...props} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -25,6 +25,6 @@ const TestingLibrary = (props: SVGProps<SVGSVGElement>) => {
       />
     </svg>
   );
-};
+}
 
 export { TestingLibrary };

@@ -1,4 +1,4 @@
-export default function Footer() {
+function Footer() {
   return (
     <footer className="mx-auto max-w-prose px-4 py-5 text-center text-(--text-muted-color)">
       <p className="text-xs">Built by Jackson Jude</p>
@@ -6,3 +6,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export { Footer };

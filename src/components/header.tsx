@@ -9,7 +9,7 @@ function Link({ href, text }: { href: string; text: string }) {
   );
 }
 
-export default function Header() {
+function Header() {
   return (
     <header className="sticky top-0 bg-(--background-color) px-4 py-6">
       <nav>
@@ -31,3 +31,5 @@ export default function Header() {
     </header>
   );
 }
+
+export { Header };

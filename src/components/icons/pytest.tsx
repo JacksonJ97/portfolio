@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Pytest = (props: SVGProps<SVGSVGElement>) => {
+function Pytest(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="48"
@@ -17,6 +17,6 @@ const Pytest = (props: SVGProps<SVGSVGElement>) => {
       <rect x="3" y="15" width="94" height="9" rx="4.5" fill="#696969" />
     </svg>
   );
-};
+}
 
 export { Pytest };
