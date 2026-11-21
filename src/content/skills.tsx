@@ -102,8 +102,8 @@ function TechnologyTag({ label, icon: Icon }: Technology) {
 
 function SkillList({ title, technologies }: Skill) {
   return (
-    <div>
-      <h3 className="mb-2 font-fira-code text-sm font-medium text-(--text-muted-color)">{title}</h3>
+    <div className="flex flex-col gap-2">
+      <h3 className="font-fira-code text-sm font-medium text-(--text-muted-color)">{title}</h3>
       <ul className="flex flex-wrap items-center gap-2">
         {technologies.map((technology, index) => (
           <li key={index}>
@@ -117,8 +117,8 @@ function SkillList({ title, technologies }: Skill) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="scroll-mt-20">
-      <h2 className="mb-4 font-fira-code text-2xl font-medium uppercase">Skills</h2>
+    <section id="skills" className="flex flex-col gap-4">
+      <h2 className="font-fira-code text-2xl font-medium uppercase">Skills</h2>
 
       <div className="flex flex-col gap-4">
         {skills.map((item) => (

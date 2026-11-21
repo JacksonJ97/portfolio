@@ -6,6 +6,10 @@
   --breakpoint-xs: 25rem;
 }
 
+@utility page-container {
+  @apply mx-auto max-w-prose px-4;
+}
+
 :root {
   --background-color: oklch(14.5% 0 0); /* neutral-950 */
   --background-subtle-color: oklch(27.4% 0.006 286.033); /* zinc-800 */
@@ -17,6 +21,7 @@
 }
 
 html {
+  @apply scroll-pt-20;
   scroll-behavior: smooth;
 }
 

@@ -53,37 +53,37 @@ const projects: Project[] = [
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="rounded border border-(--border-color) bg-(--background-surface-color) px-4 pt-4 pb-5">
-      <div className="mb-1 flex items-center justify-between gap-1">
-        <h3 className="text-lg font-medium">{project.title}</h3>
+    <div className="flex flex-col gap-4 rounded border border-(--border-color) bg-(--background-surface-color) p-4">
+      <div className="flex flex-col gap-1">
+        <div className="flex items-start justify-between gap-2">
+          <h3 className="self-center text-lg font-medium">{project.title}</h3>
 
-        <div className="flex items-center gap-1">
-          {project.liveLink && (
+          <div className="flex shrink-0 items-center gap-1">
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View live site"
+                className="rounded border border-transparent p-1.5 transition-colors hover:border-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
+              >
+                <ExternalLink aria-hidden="true" className="size-4.5" />
+              </a>
+            )}
             <a
-              href={project.liveLink}
+              href={project.sourceLink}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View live site"
+              aria-label="View source code on GitHub"
               className="rounded border border-transparent p-1.5 transition-colors hover:border-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
             >
-              <ExternalLink aria-hidden="true" className="size-4.5" />
+              <GitHub aria-hidden="true" className="size-4.5" />
             </a>
-          )}
-          <a
-            href={project.sourceLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View source code on GitHub"
-            className="rounded border border-transparent p-1.5 transition-colors hover:border-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
-          >
-            <GitHub aria-hidden="true" className="size-4.5" />
-          </a>
+          </div>
         </div>
-      </div>
 
-      <p className="mb-4 text-sm leading-relaxed text-(--text-muted-color)">
-        {project.description}
-      </p>
+        <p className="text-sm leading-relaxed text-(--text-muted-color)">{project.description}</p>
+      </div>
 
       <ul className="flex flex-wrap items-center gap-2">
         {project.technologies.map((technology, index) => (
@@ -98,8 +98,8 @@ function ProjectCard({ project }: { project: Project }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="scroll-mt-20">
-      <h2 className="mb-6 font-fira-code text-2xl font-medium uppercase">Projects</h2>
+    <section id="projects" className="flex flex-col gap-4">
+      <h2 className="font-fira-code text-2xl font-medium uppercase">Projects</h2>
 
       <div className="flex flex-col gap-4">
         {projects.map((project) => (

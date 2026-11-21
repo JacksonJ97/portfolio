@@ -2,7 +2,7 @@ function Link({ href, text }: { href: string; text: string }) {
   return (
     <a
       href={href}
-      className="rounded px-1.5 py-0.5 font-fira-code uppercase transition-colors hover:text-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
+      className="block rounded py-1 font-fira-code uppercase transition-colors hover:text-(--primary-color) focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white xs:px-1"
     >
       {text}
     </a>
@@ -11,9 +11,9 @@ function Link({ href, text }: { href: string; text: string }) {
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-(--background-color) px-4 py-6">
-      <nav>
-        <ul className="flex items-center justify-end gap-2">
+    <header className="sticky top-0 bg-(--background-color) py-4">
+      <nav className="page-container">
+        <ul className="flex flex-wrap items-center justify-end gap-2">
           <li>
             <Link href="#about" text="About" />
           </li>
