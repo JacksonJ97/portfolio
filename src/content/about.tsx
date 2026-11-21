@@ -13,22 +13,18 @@ export default function About() {
       <p className="mb-4 text-sm leading-relaxed">
         I'm Jackson Jude, a{" "}
         <span className="text-(--primary-color)">full stack software engineer</span> with 3+ years
-        of professional experience, specializing in product development. While I lean toward
-        frontend, I take a product-first approach, whether that means crafting polished interfaces,
-        optimizing backend systems, or owning end-to-end features.
+        of experience building web products. I take a product-first approach and work across the
+        stack, with a focus on frontend development.
       </p>
 
       <p className="mb-4 text-sm leading-relaxed">
-        Originally an Electrical Engineering graduate, I transitioned into software to pursue my
-        passion for building impactful web applications. Inspired by stories of teams creating
-        products that changed how people connect with technology, I'm most excited about
-        contributing to a product's journey from concept to launch and beyond.
+        I studied electrical engineering before moving into software. I enjoy taking products from
+        concept to launch and improving them after release.
       </p>
 
       <p className="mb-8 text-sm leading-relaxed">
-        Outside of development, I enjoy exploring music, watching anime, and playing competitive
-        games. I also value connecting with friends, whether that's discovering new restaurants,
-        staying active with sports, or enjoying familiar pastimes.
+        <strong className="font-semibold">Fun fact</strong> · I've ranked in the top 1% in 3
+        competitive games: League of Legends, Valorant, and Teamfight Tactics.
       </p>
 
       <div className="flex flex-wrap items-center gap-2">
