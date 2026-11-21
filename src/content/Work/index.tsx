@@ -1,12 +1,10 @@
 export default function Work() {
   return (
     <section id="work" className="scroll-mt-20">
-      <h2 className="mb-4 font-fira-code text-2xl font-medium text-(--text-color) uppercase">
-        Work
-      </h2>
+      <h2 className="mb-4 font-fira-code text-2xl font-medium uppercase">Work</h2>
 
       <div className="mb-1 flex flex-col justify-between gap-1 xs:flex-row xs:items-center">
-        <h3 className="text-base font-medium text-(--text-color)">PheedLoop</h3>
+        <h3 className="font-medium">PheedLoop</h3>
         <p className="text-sm text-(--text-muted-color)">Feb 2022 - Mar 2025</p>
       </div>
 

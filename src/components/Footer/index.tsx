@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-prose px-4 py-5 text-center">
-      <p className="text-xs text-(--text-muted-color)">Built by Jackson Jude</p>
-      <p className="text-xs text-(--text-muted-color)">Last updated: November 2026</p>
+    <footer className="mx-auto max-w-prose px-4 py-5 text-center text-(--text-muted-color)">
+      <p className="text-xs">Built by Jackson Jude</p>
+      <p className="text-xs">Last updated: November 2026</p>
     </footer>
   );
 }

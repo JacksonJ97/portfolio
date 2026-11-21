@@ -55,7 +55,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded border border-(--border-color) bg-(--background-surface-color) px-4 pt-4 pb-5">
       <div className="mb-1 flex items-center justify-between gap-1">
-        <h3 className="text-lg font-medium text-(--text-color)">{project.title}</h3>
+        <h3 className="text-lg font-medium">{project.title}</h3>
 
         <div className="flex items-center gap-1">
           {project.liveLink && (
@@ -64,7 +64,7 @@ function ProjectCard({ project }: { project: Project }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View live site"
-              className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
+              className="p-2 transition-colors hover:text-(--primary-color)"
             >
               <ExternalLink className="size-4.5" />
             </a>
@@ -74,7 +74,7 @@ function ProjectCard({ project }: { project: Project }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View source code on GitHub"
-            className="p-2 text-(--text-color) transition-colors hover:text-(--primary-color)"
+            className="p-2 transition-colors hover:text-(--primary-color)"
           >
             <Github className="size-4.5" />
           </a>
@@ -87,10 +87,7 @@ function ProjectCard({ project }: { project: Project }) {
 
       <ul className="flex flex-wrap items-center gap-2">
         {project.technologies.map((technology, index) => (
-          <li
-            className="rounded-md bg-(--background-subtle-color) px-2 py-1 text-xs text-(--text-color)"
-            key={index}
-          >
+          <li className="rounded-md bg-(--background-subtle-color) px-2 py-1 text-xs" key={index}>
             {technology}
           </li>
         ))}
@@ -102,9 +99,7 @@ function ProjectCard({ project }: { project: Project }) {
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-20">
-      <h2 className="mb-6 font-fira-code text-2xl font-medium text-(--text-color) uppercase">
-        Projects
-      </h2>
+      <h2 className="mb-6 font-fira-code text-2xl font-medium uppercase">Projects</h2>
 
       <div className="flex flex-col gap-4">
         {projects.map((project) => (

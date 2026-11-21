@@ -89,7 +89,7 @@ function TechnologyTag({ label, icon }: Technology) {
   return (
     <div className="flex items-center gap-2 rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2">
       <img src={icon} alt={`${label} logo`} className="size-4" />
-      <p className="text-xs font-medium text-(--text-color)">{label}</p>
+      <p className="text-xs font-medium">{label}</p>
     </div>
   );
 }
@@ -112,9 +112,7 @@ function SkillList({ title, technologies }: Skill) {
 export default function Skills() {
   return (
     <section id="skills" className="scroll-mt-20">
-      <h2 className="mb-4 font-fira-code text-2xl font-medium text-(--text-color) uppercase">
-        Skills
-      </h2>
+      <h2 className="mb-4 font-fira-code text-2xl font-medium uppercase">Skills</h2>
 
       <div className="flex flex-col gap-4">
         {skills.map((item) => (
