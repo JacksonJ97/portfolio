@@ -12,10 +12,10 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Leetcode Tracker",
+    title: "LeetCode Tracker",
     yearBuilt: "2026",
     description:
-      "A web application that helps users track their Leetcode problem-solving progress and view their performance analytics.",
+      "A web application that helps users track their LeetCode problem-solving progress and view their performance analytics.",
     technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Hono", "PostgreSQL"],
     liveLink: "https://leetcode-tracker-gold.vercel.app/",
     sourceLink: "https://github.com/JacksonJ97/leetcode-tracker",
@@ -24,7 +24,7 @@ const projects: Project[] = [
     title: "Pokemon Center Queue Detector",
     yearBuilt: "2026",
     description:
-      "A python script that monitors for a potential Pokemon Center queue and notifies users via Discord when a potential queue is active.",
+      "A Python script that monitors Pokémon Center for a live queue and sends alerts via Discord.",
     technologies: ["Python"],
     liveLink: null,
     sourceLink: "https://github.com/JacksonJ97/pokemon-center-queue-detector",
@@ -42,7 +42,7 @@ const projects: Project[] = [
     title: "Spacestagram",
     yearBuilt: "2026",
     description:
-      "Spacestagram is an application that reimagines NASA's Astronomy Picture of the Day as an Instagram style feed. Users can explore space photography with modern social features like infinite scrolling, liking posts, sharing via link, and saving personal favorites.",
+      "A web application that displays NASA's Astronomy Picture of the Day as an Instagram style feed. Users can explore space photography with modern social features like infinite scrolling, liking posts, sharing via link, and saving personal favorites.",
     technologies: [
       "React",
       "TypeScript",
@@ -53,24 +53,6 @@ const projects: Project[] = [
     ],
     liveLink: "https://spacestagram-tan.vercel.app/",
     sourceLink: "https://github.com/JacksonJ97/spacestagram",
-  },
-  {
-    title: "Clothing Store",
-    yearBuilt: "2021",
-    description:
-      "Clothing Store is an application that lets users browse products and manage a shopping cart with features like adding products, adjusting quantities, and removing products.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-    liveLink: "https://jacksonj97.github.io/clothing-store/",
-    sourceLink: "https://github.com/JacksonJ97/clothing-store",
-  },
-  {
-    title: "Resume Builder",
-    yearBuilt: "2021",
-    description:
-      "Resume Builder is an application that transforms user inputs into a polished, formatted resume. Users can add or remove experience and education sections dynamically, and even load an example resume for inspiration.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-    liveLink: "https://jacksonj97.github.io/cv-application/",
-    sourceLink: "https://github.com/JacksonJ97/cv-application",
   },
 ];
 
