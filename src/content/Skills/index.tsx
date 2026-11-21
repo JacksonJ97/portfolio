@@ -1,31 +1,35 @@
-import reactIcon from "assets/images/skills/react.svg";
-import tsIcon from "assets/images/skills/ts.svg";
-import jsIcon from "assets/images/skills/js.svg";
-import nextIcon from "assets/images/skills/next.svg";
-import tanstackIcon from "assets/images/skills/tanstack.svg";
-import htmlIcon from "assets/images/skills/html.svg";
-import cssIcon from "assets/images/skills/css.svg";
-import tailwindIcon from "assets/images/skills/tailwind.svg";
-import pythonIcon from "assets/images/skills/python.svg";
-import djangoIcon from "assets/images/skills/django.svg";
-import nodeIcon from "assets/images/skills/node.svg";
-import expressIcon from "assets/images/skills/express.svg";
-import pgsqlIcon from "assets/images/skills/pgsql.svg";
-import jestIcon from "assets/images/skills/jest.svg";
-import testingLibraryIcon from "assets/images/skills/testing-library.png";
-import vitestIcon from "assets/images/skills/vitest.svg";
-import pytestIcon from "assets/images/skills/pytest.svg";
-import gitIcon from "assets/images/skills/git.svg";
-import githubIcon from "assets/images/skills/github.svg";
-import dockerIcon from "assets/images/skills/docker.svg";
-import vsCodeIcon from "assets/images/skills/vscode.svg";
-import figmaIcon from "assets/images/skills/figma.svg";
-import postmanIcon from "assets/images/skills/postman.svg";
-import codexIcon from "assets/images/skills/codex.svg";
+import type { ComponentType, SVGProps } from "react";
+
+import { React } from "components/icons/react";
+import { TypeScript } from "components/icons/typescript";
+import { JavaScript } from "components/icons/javascript";
+import { Nextjs } from "components/icons/next";
+import { TanStack } from "components/icons/tanstack";
+import { HTML5 } from "components/icons/html";
+import { CSS } from "components/icons/css";
+import { TailwindCSS } from "components/icons/tailwindcss";
+import { Python } from "components/icons/python";
+import { Django } from "components/icons/django";
+import { Nodejs } from "components/icons/node";
+import { Expressjs } from "components/icons/express";
+import { Hono } from "components/icons/hono";
+import { PostgreSQL } from "components/icons/postgresql";
+import { Jest } from "components/icons/jest";
+import { TestingLibrary } from "components/icons/testing-library";
+import { Vitest } from "components/icons/vitest";
+import { Pytest } from "components/icons/pytest";
+import { Git } from "components/icons/git";
+import { GitHub } from "components/icons/github";
+import { Docker } from "components/icons/docker";
+import { VisualStudioCode } from "components/icons/vscode";
+import { Figma } from "components/icons/figma";
+import { Postman } from "components/icons/postman";
+import { Codex } from "components/icons/codex";
+import { ClaudeCode } from "components/icons/claude-code";
 
 type Technology = {
   label: string;
-  icon: string;
+  icon: ComponentType<SVGProps<SVGSVGElement>>;
 };
 
 type Skill = {
@@ -37,58 +41,58 @@ const skills: Skill[] = [
   {
     title: "Frontend",
     technologies: [
-      { label: "React", icon: reactIcon },
-      { label: "TypeScript", icon: tsIcon },
-      { label: "JavaScript", icon: jsIcon },
-      { label: "Next.js", icon: nextIcon },
-      { label: "TanStack Query", icon: tanstackIcon },
-      { label: "HTML", icon: htmlIcon },
-      { label: "CSS", icon: cssIcon },
-      { label: "Tailwind CSS", icon: tailwindIcon },
+      { label: "React", icon: React },
+      { label: "TypeScript", icon: TypeScript },
+      { label: "JavaScript", icon: JavaScript },
+      { label: "Next.js", icon: Nextjs },
+      { label: "TanStack Query", icon: TanStack },
+      { label: "HTML", icon: HTML5 },
+      { label: "CSS", icon: CSS },
+      { label: "Tailwind CSS", icon: TailwindCSS },
     ],
   },
   {
     title: "Backend",
     technologies: [
-      { label: "Python", icon: pythonIcon },
-      { label: "Django", icon: djangoIcon },
-      { label: "Node.js", icon: nodeIcon },
-      { label: "Express.js", icon: expressIcon },
-      { label: "Hono", icon: "" }, // TODO Add image
+      { label: "Python", icon: Python },
+      { label: "Django", icon: Django },
+      { label: "Node.js", icon: Nodejs },
+      { label: "Express.js", icon: Expressjs },
+      { label: "Hono", icon: Hono },
     ],
   },
   {
     title: "Databases",
-    technologies: [{ label: "PostgreSQL", icon: pgsqlIcon }],
+    technologies: [{ label: "PostgreSQL", icon: PostgreSQL }],
   },
   {
     title: "Testing",
     technologies: [
-      { label: "Jest", icon: jestIcon },
-      { label: "React Testing Library", icon: testingLibraryIcon },
-      { label: "Vitest", icon: vitestIcon },
-      { label: "Pytest", icon: pytestIcon },
+      { label: "Jest", icon: Jest },
+      { label: "React Testing Library", icon: TestingLibrary },
+      { label: "Vitest", icon: Vitest },
+      { label: "Pytest", icon: Pytest },
     ],
   },
   {
     title: "Tools",
     technologies: [
-      { label: "Git", icon: gitIcon },
-      { label: "GitHub", icon: githubIcon },
-      { label: "Docker", icon: dockerIcon },
-      { label: "VS Code", icon: vsCodeIcon },
-      { label: "Figma", icon: figmaIcon },
-      { label: "Postman", icon: postmanIcon },
-      { label: "Codex", icon: codexIcon },
-      { label: "Claude Code", icon: "" }, // TODO Add image
+      { label: "Git", icon: Git },
+      { label: "GitHub", icon: GitHub },
+      { label: "Docker", icon: Docker },
+      { label: "VS Code", icon: VisualStudioCode },
+      { label: "Figma", icon: Figma },
+      { label: "Postman", icon: Postman },
+      { label: "Codex", icon: Codex },
+      { label: "Claude Code", icon: ClaudeCode },
     ],
   },
 ];
 
-function TechnologyTag({ label, icon }: Technology) {
+function TechnologyTag({ label, icon: Icon }: Technology) {
   return (
     <div className="flex items-center gap-2 rounded border border-(--border-color) bg-(--background-surface-color) px-3 py-2">
-      <img src={icon} alt={`${label} logo`} className="size-4" />
+      <Icon aria-hidden="true" className="size-4" />
       <p className="text-xs font-medium">{label}</p>
     </div>
   );

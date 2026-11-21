@@ -1,5 +1,5 @@
-import Github from "components/Icons/Github";
-import ExternalLink from "components/Icons/ExternalLink";
+import { GitHub } from "components/icons/github";
+import { ExternalLink } from "components/icons/external-link";
 
 type Project = {
   title: string;
@@ -64,9 +64,9 @@ function ProjectCard({ project }: { project: Project }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View live site"
-              className="p-2 transition-colors hover:text-(--primary-color)"
+              className="rounded p-1.5 transition-colors hover:bg-(--background-subtle-color) focus-visible:bg-(--background-subtle-color)"
             >
-              <ExternalLink className="size-4.5" />
+              <ExternalLink aria-hidden="true" className="size-4.5" />
             </a>
           )}
           <a
@@ -74,9 +74,9 @@ function ProjectCard({ project }: { project: Project }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View source code on GitHub"
-            className="p-2 transition-colors hover:text-(--primary-color)"
+            className="rounded p-1.5 transition-colors hover:bg-(--background-subtle-color) focus-visible:bg-(--background-subtle-color)"
           >
-            <Github className="size-4.5" />
+            <GitHub aria-hidden="true" className="size-4.5" />
           </a>
         </div>
       </div>

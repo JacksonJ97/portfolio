@@ -1,9 +1,9 @@
-import resume from "assets/resume/resume.pdf";
+import resume from "assets/resume.pdf";
 import LinkButton from "components/LinkButton";
-import Mail from "components/Icons/Mail";
-import Download from "components/Icons/Download";
-import Github from "components/Icons/Github";
-import Linkedin from "components/Icons/Linkedin";
+import { Mail } from "components/icons/mail";
+import { Download } from "components/icons/download";
+import { GitHub } from "components/icons/github";
+import { Linkedin } from "components/icons/linkedin";
 
 export default function About() {
   return (
@@ -33,19 +33,19 @@ export default function About() {
 
       <div className="flex flex-wrap items-center gap-2">
         <LinkButton href="mailto:jacksonjude97@gmail.com">
-          <Mail className="size-4 text-(--text-muted-color)" />
+          <Mail className="size-4" aria-hidden="true" />
           Email
         </LinkButton>
         <LinkButton href={resume}>
-          <Download className="size-4 text-(--text-muted-color)" />
+          <Download className="size-4" aria-hidden="true" />
           Resume
         </LinkButton>
         <LinkButton href="https://github.com/JacksonJ97">
-          <Github className="size-4 text-(--text-muted-color)" />
+          <GitHub className="size-4" aria-hidden="true" />
           GitHub
         </LinkButton>
         <LinkButton href="https://www.linkedin.com/in/jacksonjude/">
-          <Linkedin className="size-4 text-(--text-muted-color)" />
+          <Linkedin className="size-4" aria-hidden="true" />
           LinkedIn
         </LinkButton>
       </div>
