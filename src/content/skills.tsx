@@ -5,6 +5,7 @@ import { TypeScript } from "components/icons/typescript";
 import { JavaScript } from "components/icons/javascript";
 import { Nextjs } from "components/icons/next";
 import { TanStack } from "components/icons/tanstack";
+import { Vite } from "components/icons/vite";
 import { HTML5 } from "components/icons/html";
 import { CSS } from "components/icons/css";
 import { TailwindCSS } from "components/icons/tailwindcss";
@@ -46,6 +47,7 @@ const skills: Skill[] = [
       { label: "JavaScript", icon: JavaScript },
       { label: "Next.js", icon: Nextjs },
       { label: "TanStack Query", icon: TanStack },
+      { label: "Vite", icon: Vite },
       { label: "HTML", icon: HTML5 },
       { label: "CSS", icon: CSS },
       { label: "Tailwind CSS", icon: TailwindCSS },
